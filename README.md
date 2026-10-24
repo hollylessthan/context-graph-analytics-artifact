@@ -18,3 +18,7 @@ Read [EXPORT_SCOPE.md](EXPORT_SCOPE.md) before approving a versioned release or 
 A curated, SHA-256-manifested export of the 264-call paired run is committed as `evidence/context-graph-paired-evidence-curated.zip`. The original archive contains opaque provider-response payloads; those are intentionally omitted from the curated evidence ZIP, while preserving the scored SQL, model-output-based contract decisions, contexts, plan, provider ledger, and summary.
 
 Run `python scripts/reproduce_paired.py evidence/context-graph-paired-evidence-curated.zip` to recompute the 132 paired pass/fail outcomes from individual saved scores, rather than trusting the summary alone. The committed ZIP has been checked against its source export by Git blob identity and file-level SHA-256 digests. It does not regenerate model calls.
+
+## Stage-local factorial evidence
+
+The four compressed originals (`catalogs.json.gz`, `factorial.json.gz`, `pairs.json.gz`, `support.json.gz`) have been independently SHA-256 checked against the frozen summary. The repository's `scripts/reproduce_stage.py` recomputes all 16 factorial cells, 44/72 packing-only changed contexts, and 48/218/171 changed selections by stage from record-level traces. Once `evidence/stage-local-evidence.zip` is committed, CI automatically runs this check. Until then, the script can be run locally with a ZIP containing `stage-local/<filename>.json.gz`.
