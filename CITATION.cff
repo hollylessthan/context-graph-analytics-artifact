@@ -12,6 +12,8 @@ authors:
     given-names: Fangyu
 repository-code: "https://github.com/hollylessthan/context-graph-analytics-artifact"
 version: "1.0.1"
+doi: 10.5281/zenodo.23628731
+date-released: 2026-10-24
 license: Apache-2.0
 keywords:
   - agentic analytics
