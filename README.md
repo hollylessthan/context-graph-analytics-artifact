@@ -12,3 +12,9 @@ Current checks verify frozen original totals 30/36 versus 25/36, eight factorial
 The 264-call paired raw run is preserved as [workflow artifact 12571928596](https://github.com/hollylessthan/context-graph-analytics-study/actions/runs/40120563599/artifacts/12571928596), pending safe export and completeness validation.
 
 Read [EXPORT_SCOPE.md](EXPORT_SCOPE.md) before approving a versioned release or Zenodo deposition.
+
+## Raw paired evidence and reproduction
+
+A sanitized, checksum-manifested export of the 264-call paired run can be added as `evidence/paired-evidence.zip` after review. The original archive contains opaque provider-response payloads; those are intentionally omitted from the curated evidence ZIP, while preserving the scored SQL, model-output-based contract decisions, contexts, plan, provider ledger, and summary.
+
+Run `python scripts/reproduce_paired.py evidence/paired-evidence.zip` to recompute the 132 paired pass/fail outcomes from individual saved scores, rather than trusting the summary alone. **The ZIP is not yet committed**; this draft PR includes the validation code and publication instructions.
