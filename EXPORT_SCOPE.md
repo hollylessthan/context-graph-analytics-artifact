@@ -10,12 +10,12 @@ The 2026-10-24 [run 40136118512](https://github.com/hollylessthan/context-graph-
 
 These checks **re-aggregate frozen evidence**, not regenerate graph construction, retrieve contexts from source catalogs, run SQL, or call LLMs. Do not claim full experiment re-execution.
 
-## Remaining release gates
+## Archived release and remaining scope
 
 1. Inspect released archives for credentials, secrets, personal information, and licensing restrictions. Do not assume a successful checksum test implies publication safety.
 2. Preserve a manifest tying this export to the frozen source commits, run IDs, original archive hashes, and artifact commit. The metadata in `PROVENANCE.md` is a first step, not a substitute for a complete byte-level manifest.
 3. Decide whether a full deterministic retrieval/scoring rerun is needed. If so, export minimally necessary code and pinned dependencies, and test them separately. It is not necessary for the current frozen-result re-aggregation claim.
-4. Make the exact verified commit immutable as `artifact-v1.0`, archive that release on Zenodo and check that Zenodo contains the expected evidence ZIP files.
-5. Only after the DOI exists, cite that fixed archive from the paper.
+4. The original frozen artifact was released as `artifact-v1.0` and archived at DOI [10.5281/zenodo.23628013](https://doi.org/10.5281/zenodo.23628013). This documentation correction does not alter the archived release.
+5. For a documentation-only `artifact-v1.0.1` follow-up, verify the new tag/release and corresponding Zenodo record before updating the manuscript's DOI; the original DOI remains the citation for v1.0.
 
 No new paid model calls are required or authorized.
