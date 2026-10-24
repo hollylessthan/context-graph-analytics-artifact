@@ -44,7 +44,7 @@ def check(archive):
             assert sum(x["001"] and not x["000"] for x in group)==altered_only
             assert sum(1 for m in members.values() if stratum_map[m]==stratum)==cases
         changed_p3={"canonical|schema_llm|1|P3","canonical|schema_llm|2|P3"}
-        p3_discordant=[x for x in scores if x["pair_id"] in changed_p3 and x["arm"]=="001" and x["repetition"] in (1,2,3) and x["failure_stage"]=="numerical_scoring"]
+        p3_discordant=[x for x in scores if x["pair_id"] in changed_p3 and x["arm"]=="001" and x["repetition"] in (1,2,3) and x["failure_stage"]=="numerical_scoring" and by[x["pair_id"],x["repetition"]]["000"]]
         expected_errors={"exclusions.2017-11.not_eligible_delivered: count_mismatch","exclusions.2017-11.missing_lifecycle_timestamp: count_mismatch"}
         assert len(p3_discordant)==5
         assert all(set(x["answer"]["errors"])==expected_errors for x in p3_discordant)
