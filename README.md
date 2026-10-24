@@ -2,7 +2,7 @@
 
 **Frozen evidence artifact archived as [v1.0](https://github.com/hollylessthan/context-graph-analytics-artifact/releases/tag/artifact-v1.0), DOI [10.5281/zenodo.23628013](https://doi.org/10.5281/zenodo.23628013).** Companion to *Evaluating Context-Graph Construction for Analytical Agents: Hidden Confounders and Lessons from a Controlled Benchmark* by Fangyu Lo (Independent Researcher).
 
-Original code and studies: https://github.com/hollylessthan/context-graph-analytics-study
+Original code and studies (currently private; links require repository access): https://github.com/hollylessthan/context-graph-analytics-study
 
 ## Offline evidence verification
 Run the following commands with Python 3.11+. No API keys or paid calls needed:
