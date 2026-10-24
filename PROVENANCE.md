@@ -4,7 +4,7 @@ Source study: https://github.com/hollylessthan/context-graph-analytics-study
 
 ## Paired prospective test
 - Frozen study Actions run: [40120563599](https://github.com/hollylessthan/context-graph-analytics-study/actions/runs/40120563599)
-- Source run head: `a27b4a148fb1baec77922fcd757203f9a4ecda4`
+- Source run head: `a27b4a148fb1baec77922fcd757203f9a4ecda4a`
 - Original uploaded Actions artifact: `12571928596`, recorded source ZIP SHA-256 `09881cf265b6b9c5e3da28f170d3d08d0f4acfaf709e395c283097596a85cf43`
 - Curated, sanitized export: `evidence/context-graph-paired-evidence-curated.zip`
 - Curated archive intentionally excludes opaque provider model-response payloads; saved per-operation scores, SQL, contexts, trace/ledger and plan are included.
@@ -21,9 +21,12 @@ Source study: https://github.com/hollylessthan/context-graph-analytics-study
 - Frozen release: [artifact-v1.0](https://github.com/hollylessthan/context-graph-analytics-artifact/releases/tag/artifact-v1.0), DOI [10.5281/zenodo.23628013](https://doi.org/10.5281/zenodo.23628013).
 
 ## Paired plan timing and interpretive limit
+
+**Access limitation:** The source study repository is private. Its commit, PR and workflow URLs are accessible to repository collaborators but not independently inspectable by the public. Public release of this artifact alone does not expose the source study Git history. Do not treat those links as public verification. The packaged `plan.json` in the curated paired-evidence ZIP is available to all readers; its provenance relative to study commits can be cross-checked by authorized reviewers against the private Git history and hashes.
+- **GitHub-hosted chronology:** [PR #62](https://github.com/hollylessthan/context-graph-analytics-study/pull/62) was merged at **2026-10-24 18:22:01 UTC**, before GitHub created the [paired outcome workflow run #40120563599](https://github.com/hollylessthan/context-graph-analytics-study/actions/runs/40120563599) at **18:24:37 UTC**. The merge commit is `a27b4a148fb1baec77922fcd757203f9a4ecda4a`; this is also the recorded workflow run head. These are GitHub API event timestamps, unlike locally assigned Git committer dates.
 - Initial paired-design freeze: [commit `7963c0dec51c5b649834f6902197c3e327dad0ad`](https://github.com/hollylessthan/context-graph-analytics-study/commit/7963c0dec51c5b649834f6902197c3e327dad0ad), 2026-10-24 18:09:21 UTC (Git committer timestamp).
 - Primary descriptive support strata: [commit `6ac0c02e241241b373fac6c4d2f1f55343971495`](https://github.com/hollylessthan/context-graph-analytics-study/commit/6ac0c02e241241b373fac6c4d2f1f55343971495), 2026-10-24 18:14:36 UTC.
 - Most recent pre-run paired-plan clarification: [commit `888b419cb55056f982ad49d78a6ef212657ba24e`](https://github.com/hollylessthan/context-graph-analytics-study/commit/888b419cb55056f982ad49d78a6ef212657ba24e), 2026-10-24 18:19:58 UTC.
-- Prospective workflow run [40120563599](https://github.com/hollylessthan/context-graph-analytics-study/actions/runs/40120563599) created at 2026-10-24 18:24:37 UTC on head `a27b4a148fb1baec77922fcd757203f9a4ecda4`.
-- Frozen plan JSON retains status `planned_not_authorized`. That is a planning-stage authorization flag, **not** proof that no later run was authorized or that a formal external preregistration existed. These immutable Git revisions establish that the plan and stratum definition were committed before the recorded outcome run. The artifact does not independently establish when the underlying plan was authored prior to those commits.
+- Prospective workflow run [40120563599](https://github.com/hollylessthan/context-graph-analytics-study/actions/runs/40120563599) created at 2026-10-24 18:24:37 UTC on head `a27b4a148fb1baec77922fcd757203f9a4ecda4a`.
+- Frozen plan JSON retains status `planned_not_authorized`. That is a planning-stage authorization flag, **not** proof that no later run was authorized or that a formal external preregistration existed. The merge event and workflow creation establish that the study's plan revisions reached the source branch before this recorded outcome run. This is a GitHub-hosted chronological record, but public readers cannot inspect it while the source repository remains private. The artifact does not independently establish when the underlying plan was authored prior to those commits.
 
