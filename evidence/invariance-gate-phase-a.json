@@ -1,0 +1,1483 @@
+{
+  "gate": "G1_identity_invariance",
+  "provider_calls": 0,
+  "permutations_per_context": 20,
+  "realization_facts_sha256": "03f4661390fd7cd9e20be5c368219dfbc7d07b9b46a182890b0bacd75f8fe9af",
+  "graphs_checked": 21,
+  "contexts_checked": 168,
+  "followup_violations": 0,
+  "primary_contexts_changed": 3507,
+  "pass": true,
+  "graphs": [
+    {
+      "key": "canonical|deterministic_schema|0",
+      "facts": 48,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "fbdc18826bca09b9a263eb26fe5ab07b6f486b0d767759ca8b05664149c45dfa"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "30fbb1c26f52d6c1add9416dba2fe67dd4df34f73d33d8c7dfe8be14b4b4194c"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "f49af6d9d3e4401aed49129096437a8b6bf1d235fe40ce1a54dd09029e3cea30"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "f62aa41a3546be07669cdc8289e85721b38f296238fdd44815d71e4c34a60c12"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "72cef8034dfca9266d4dedb903e6a06f3235550820dd8721c564c1a6af7197bb"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "85987df8acae68709da6d5c7d559bf9e3988db3fac1a8eb650e8da60597fc514"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "d76f9d6d68a0c1e020dfab82e6f570cb1415059b28c5ae1de13d8dde0a2a9a87"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "3a309d6cb5778c78fdbbca56a6a8dbe405ddeef4f13f19c73b78b831407bfcb6"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v1|deterministic_schema|0",
+      "facts": 48,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "461d747fe31cb9000417184983568808fbabdeac5731c2a515a8737d241f5cbf"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "fd8587d0c17ed2cf81ae5e3c1d3b5b77cedafe4c5afa414b257a0687c86e581d"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "3af87abbd11eace27bccd7448a961501d318c8d145989af9ed9b45b958e3d138"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "39f86893827225178d8eb827598b60434b04d42ed8e80bf8f5ea0f7ef2a05a84"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "c975505f95d763b2ab0cd2edc41a6cbe180fa280914dcaabb320a497283f1f7a"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "239c6caeb0c05cac1b12fb09dc0f1adcbd69dd394879e291855b21e905b11378"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "ff311cebbbf5ee37c81bd15493fc042b76dc132966f3cf18e00248343c904273"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "aa765683441e3480052de80aba440c33fc0ceb0293a02fa2bd8b8610085ef7db"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v2|deterministic_schema|0",
+      "facts": 48,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a879360edb4636c343cb3a943fdd8ba590a2a65ae05e47cdbbe10c07a737ff5c"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "0d1dacb3bb32e131febcf824ece9c7e48bc704875e8137e7a554e095366b0dd4"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "2f3b0972b39a9ba2ba1701dda608dd23d31dfeeb4344b51d241b423b9e7dbd14"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "eb8b76e901671ef2d1174a483f9886a5b6a1b31a94091cb4fe134b57ad76ea04"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "8869311baad9885b9bc50d37b0e46f7341f5495220cefd243d44a04679a162a4"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "8c39fdde6f00eb92ce0b6c6a8db3775c6ab535a8afaf76bff7d01f0dae17b4e3"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "68caa9f5cf2cc6ae14af4c3531fd15a91296715bc4ac4747362e1ea6343c6b57"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "7fffd174674503a055edad66afa630c8a4b802b25d1b04891641b7749efd57de"
+        }
+      ]
+    },
+    {
+      "key": "canonical|schema_llm|1",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "1b1a6c49e27de892a9b920bdd608dce514430dfc4002aa37e786ad74211a3ff5"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "2110ecc76b8110073d7d18644ab252608f42cffdf2c906a8b65c0fa1725da88b"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "7c65e9a6bb3e0f7c434b731fcc264b596e4e5c7708e575313b51ac11776f6831"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a8b88aa4bd86d6ed637020b509b43929c2e10d0f8265af932a35d59ee172f9b0"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "5c165c4deb7d68c11515ead6556547db7bc9b8c361eb3ce8c9eee9e91460c08d"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 17,
+          "followup_context_sha256": "1774fb26bcbfd8336a0ee60a4b9c57a236463f65157ad571391cc9bd1a0a68c5"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "f55fe9278237e07c2a249aa17fd5cfeb5c6002425251f351a3abc1795eab5329"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 20,
+          "followup_context_sha256": "a6bdd2bbd2bfae3717d17b17d0efe2d9d2c36139ab19d9541db71aea0b954cf5"
+        }
+      ]
+    },
+    {
+      "key": "canonical|schema_llm|2",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "643abea39357980a3f37e6c911b2f5a266a6c31b5efa45d14cec0c44d295423b"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "4cf001726cc792f521e8a2ca3a4f736d6e4eda13b1bdf6aa5e7aca1aa4be55e6"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "85c662a923f74ae3294b291ebd5c9c987cf7528f6e07bf89a771a00e3fe3ccfb"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "86a3e78c56d4816c33acf9efd49b3017f540f18addb9f7b25792f69446fda6f7"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "80d529a4f17fdf248970cd2e84be4f6972d4c13049e33491f29761b321a1e62a"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 20,
+          "followup_context_sha256": "720cd893a2c5b75d9290721cef86458807ddc4b3622515ab809dc26b1c05d370"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "3bd20877653c301c5165b525b911b83a17cf7cd52b9488f584de101451731f87"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "596f60eee05bbe1d0d97c0985fd1bf0a5b90de97445476e2e6999f306c04d9f3"
+        }
+      ]
+    },
+    {
+      "key": "canonical|schema_llm|3",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "c21b5bccdf9e4dcb4221b5317c344ff8e78e97b502e02434f4e8fa8a2a1ec261"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "8b667b257c4f018ef57c2ddf5e79d70f16309255e17ef9ead11447744b95a903"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "5883115768904f9610de80af8ece12dcd92caecebd4cfe85f4ba3966ba6e3d36"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 20,
+          "followup_context_sha256": "dbc425ded0327b2981d573f6e862e3ab29026f529cf53e3b103be8c0ec95fd40"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e28e128a5414ed3892bab34ead9276e21a06f6615d4113ccb76f66161376497a"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 17,
+          "followup_context_sha256": "b6aadd882922f06d5d67c93f906706209389f5858e6c68a046493752b6e03737"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "368aa12e62f89cf33aa9e0403987943c5d90cbcbce3192e8d003eb5225f71e08"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 20,
+          "followup_context_sha256": "aabeaf3b18f76b7d23907cb83cf8bb626e9e29a09d6880ae6aafab323bb8af5d"
+        }
+      ]
+    },
+    {
+      "key": "canonical|simple_llm|1",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e3233fbda9e6690d2d444574c30133e504dc62702611d68bfa4fe1c0f435c0eb"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "b379e04e24f8dc9ff9dfbf7ad0dce02b7b532ef12e482da4c4357972c1ac6f6c"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a71921cf5b9793314c460c069e3ad1f6b1b6dfd18857aeb8ae9ce8c21128b751"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 17,
+          "followup_context_sha256": "f38a8d84c625bf007917c435257d9fc09cc074f134b7365787982e733c39283e"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "ac53a0fce5ae6c91926b668471a547c02cdf1ab9c094fc07a27e5ef7eb5d6ac1"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 20,
+          "followup_context_sha256": "9fa6f8c4295e384188926b381bd1e7ebec5a50ae179354c3101c2571ee892be3"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "97b4d79df545f867ba450f1ad416e3e9c544332bbe0f1714110454b8b302e02c"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "3ca103e89d16577015772987a2b10efe56fc91828ec815dd5829af2954c33541"
+        }
+      ]
+    },
+    {
+      "key": "canonical|simple_llm|2",
+      "facts": 111,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "35b9f13fe094b6a7c981daed3aa3884977e08421b5850540819b6f707ea26593"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "90045f2def5104c6d191a9afa7f6bd43b00ab2bdbfb7ceea725699ba3329096a"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "6bc037594749d29c06ffc25ec8557b9cc3be25b1f968768f76044d183079f972"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "25c2e06ccd569830aa43780030b530087ec280b86469e40e82582572dda5d0f5"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e6089c147a3aa4f5b724e15faaea164014eaa87d10673f3060870d309e532364"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "95ba3b6d0fddfbd782652741b91a6edac37b5fcaca00ca979216670f79fa9b06"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "74f35a1dec3a26839ba45e1f824d309cc9ad5440f5952ce7158bee2bc21efd74"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 20,
+          "followup_context_sha256": "0d40680de138723ab8207ab4de17eefcc3d7b5223b5ac42fa814172c3450ddf0"
+        }
+      ]
+    },
+    {
+      "key": "canonical|simple_llm|3",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "bf07873757b0b1b4209e06f7e516f5e9ef451384a6d84cd1c8f2290ab4af6660"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "031ce22cf7da38f7dc887a8d79aca1077e4b6aba84e09ce37e20c706a42f9519"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "1c88950ab3ce51236a771a39126e3e5157de1f31f3b4b166412ebd467b97b861"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 20,
+          "followup_context_sha256": "163a287b273c6f638118c24020a715d0249c052c22d300c05f3fb49762768938"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "41a45891e6b220e164bdcfed8d6de2913138fd4533e0c1a60120f3966c5ddd0a"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 20,
+          "followup_context_sha256": "2cd29dd5f799ef6ee4c9d5852dd6f51849059b8d363fa13e8064886c4f62ac39"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "cb0875a935b6c8717072e66a41c65d17e59919903d97449ba9b3f4c247c28e55"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "7509d1475f0d93dbf789bcbd8943649f3f50c1d3583f9f75a122933dd1c8f8c5"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v1|schema_llm|1",
+      "facts": 118,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "c458f8e1a423dcf89035b8d3cfc2f312eb6afd81b1bcbef4ac9bcc81de452c02"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "7f8b4a826e2fb0f250fa6dc0e18e8c47e2b9c2bc123b8d513019370f9122123e"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "1251ff066ca33fd1028a843f7f37c241c3ed27f912be41dd5ca9ba55e93cbf2f"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "5eccc29cbfe8caf0bf6c5b7dd4fff2683ca1c88f43ccc3dd8ab95452a3b6ac36"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "07aee5299e266ec52a71b282f7e3465b47a7d95f735604a9534f43b366089aa9"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "64851f039a613c54356a3abfdc1219779579e2b97bd12454cece9e8223781048"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "8d40022a2b3e2c6b337808be4f30c5a4b2730042fc5e5a5805bfd20a2b429b27"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "5608ee2e68e633b23e51979524f4961ed041960e522594b092733d20a775b92b"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v1|schema_llm|2",
+      "facts": 114,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e3181c30d86605c36516cbaea09d936119dc78676e8051069b918125622ec443"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "c61e1e2a6223414443701bd6020447c6548f5ac5babfe93a33711352587b3385"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "8a081808787df931038f442a394f7ae744569da63ebdd17f7d4a1cde23f34317"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a7704646855f37f8cc67cff466527ba6ca52caa0d9f0bbfe5f429068050ff120"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "93d42f69f845ba854304e85170b667a4efedc4d32a48145cd533f71c21a44373"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "31b167bac06f1d0b2c8d2e9444ff1b7e6e43af0b65c23e2d9b0f816b945a7c15"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "4c2d5991fa8c355d2508047ff69eba16e12819d385db8c3ccae99ca9e9792d11"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e98ac2dc89b264e06534d0055a8559cb5c3e356215d4e66839ee085b4899c4d6"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v1|schema_llm|3",
+      "facts": 117,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e3181c30d86605c36516cbaea09d936119dc78676e8051069b918125622ec443"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "c61e1e2a6223414443701bd6020447c6548f5ac5babfe93a33711352587b3385"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "c838f9fa3ed9039bdf9dd642cf060dfc548ac6aa511f0140a3c67ef9a12ec7a6"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "beba0702f2747463e63e3d75417a383ce760fca791984aa0ac3bc0c98f342194"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "93d42f69f845ba854304e85170b667a4efedc4d32a48145cd533f71c21a44373"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "d0056d03b2d83d619368769d2e251491126600c846d65a77dbcc34b71228ded2"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "952498e016021be70e7a2332ad7aa02a0a7f242482426a1bcbc9771abfc0eabf"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "5d0db368da902ea6cfdf665a40722b8b8dcf1522e52d1a8e9e3d8755a3a8a1d8"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v1|simple_llm|1",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "324faac4028a3ed6c7b3bebb22f2a60e6a716974da1a3481be9c042a37cc7798"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 20,
+          "followup_context_sha256": "d60b1db2fa4ecbe4bd240abf777df6b60d2100b2f13189917741c01526777590"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "27801ecf21193fd2539428025226e2506fee64590c29bd37d6d4956534b77d06"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "d30fbeccc0eb4689855fc51469eca2db7eb73cc9c1569e82572c33353c0e362a"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "79426956e9a0c0147ec50b0f10b119f2bb63b502987d05425df7f549b76db723"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "2da82e33a5f4b64eb68be98990b3e63b7b408352e3767827f1e3620e72f1f462"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "8f6577cc2721bef6abaa911fb5fe522766c6d77e424d855e9b4b8fb1ebdc9d56"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "9e353bc6df25c9afa3bcf1792c89da92307fa6e5b7a4a67952e494f7d73bf014"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v1|simple_llm|2",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "324faac4028a3ed6c7b3bebb22f2a60e6a716974da1a3481be9c042a37cc7798"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "d60b1db2fa4ecbe4bd240abf777df6b60d2100b2f13189917741c01526777590"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "27801ecf21193fd2539428025226e2506fee64590c29bd37d6d4956534b77d06"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "8a9e7b9d05fe89bf0b4345d3a1369bb71aa79c712cbfbf47e33ec9c016ec88ef"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "b82bb5f335ff066c6656312aca3885e492c65b97d6aea26fe43ad776623379a3"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a31eb6c573904d90dcaaa38aa8dbdbd4405179a1fc8d2687aacd486ddd3bbcdc"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "29e1f588716f39d5d2b53f3704158a0ec088a9424f4546e853423a71585c163c"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "b9abbfef28c12df054eb6cab7d4f9902c059849cedf10a0fbbb77bf790e6d60a"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v1|simple_llm|3",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "324faac4028a3ed6c7b3bebb22f2a60e6a716974da1a3481be9c042a37cc7798"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "d60b1db2fa4ecbe4bd240abf777df6b60d2100b2f13189917741c01526777590"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "27801ecf21193fd2539428025226e2506fee64590c29bd37d6d4956534b77d06"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "b7765923c993edfd0a1d862e4eafae6bd8775ac603279fb56294f279a789e68e"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a9741a314a356ab4ed108f71401f70f2f8d50fe15a3238c27c17a3c1a7da696a"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "de9de1ac67ab154d3aab664bfd3b670df1ff230c2578ab7e762b7109b7377937"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "8cd94fdd307bd27c0eb1717e7f112fcdaf75d8072369a6408902f06308adfaf9"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "c5edf25a8c5bd99881ef2ded6aa22a7944cdf15739d4ba33b67710e7b6086caf"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v2|schema_llm|1",
+      "facts": 115,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e3b056ce61d6e692cf0946a69e0a2aca707b856ccfeedf39f19251f7636214cf"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a5d82a501560892fa02d93d57d6b7356f33c979cc9204c3249814e004010ebd5"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "7208ec4dc542fee0310c48a5152868814aac1e7936f2e0f2c4871bab287fcfe1"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e6b0d5badd0f5d8c2765883eff1004e0d792c3966bad807a394b51a31d518f40"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "9ff98803590564f979aa464a67140b938a4e47b66504a5a0734c7bc79b39e437"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "6697203c372c9207c373b22cd532fd7da9cce8b58078d676aa6e85c38b350743"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "da08b775de62400a6c68b2c1f202bebc54b0d418cb8d7fbe4411b0cc202ffbc8"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "1942cc619161f71ef290a5e2557a0e594794721aaa076fba3c0b2ba69beef810"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v2|schema_llm|2",
+      "facts": 115,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e3b056ce61d6e692cf0946a69e0a2aca707b856ccfeedf39f19251f7636214cf"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a5d82a501560892fa02d93d57d6b7356f33c979cc9204c3249814e004010ebd5"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "3850fdea65539665370f1f3adeb999c3d89a8770d429992ad583bb4328f07b81"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "62d17bc3bbace3d54b953e24a042fc9083ca382c9bb03c54eaf4206f27d3b0e4"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "9ff98803590564f979aa464a67140b938a4e47b66504a5a0734c7bc79b39e437"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "9fb5ed05fc2b53c3e2d0e94d6cf1a839a0b7a70ff0beb178f795150819a39484"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "d272bebf305f37e60a994d78ec3b241982dbcca7f8c5bec2254e8639db4f6380"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "639b97296725863e895e0485fe42f34ca058659f6e21fbede54ea5a672f9e0ab"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v2|schema_llm|3",
+      "facts": 117,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "e3b056ce61d6e692cf0946a69e0a2aca707b856ccfeedf39f19251f7636214cf"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a5d82a501560892fa02d93d57d6b7356f33c979cc9204c3249814e004010ebd5"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "b9cfd49c6e2a2ccb56c608e83a0757c5b26cb192220fc3e07dac97e090619466"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "52bd62e3c9cf648f1b7427c876f13edb16b3f299035e3372f26bcd155733a98d"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "f2f6b5b9aa21a63c0accdde3ff90ce1e0a484b79de7b94d5d1d0b4e3b413b8f5"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a1de96221f2d0f250c174fed3b063c7cb26158c88b88da2f4d93a1ad1ae4115e"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "317fcf4fa0e62508d809d21c5be1e9b55168505244d2be5639fd756c5894993c"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "9d4617dbd6adfbc8f230007e687fc74200202ce135c8e29af9c37e4f82f11259"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v2|simple_llm|1",
+      "facts": 108,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "a54072dd46ef98ce13ce98dcc7e723dff79dfc0f84da95a90a4cecef4ca0e1f7"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "39409c9ccd980afcfab6cd0721494ff3a10a73a106442c7d9650d31d6f556c90"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "6b78a97dce6cce06d5dbe94c16fea95105b2aa930f3a4744b0750d0e8de82ce1"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "ef2556bc639b8eeb89281f5e528da6a40565e37289905499db4d57d738ee6061"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "6680c6d6d82f96b27c9f8bb410b966aebcaf4e51a2af484154a0f53d00cff1e5"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "49b759c4e45f9a377e8409b4afaac52d97add570ccf1708c22f3718ddaaabadf"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "1bfb034a3ea7d42edb146caa3c514f2d6d5328edbb6c8a279eb9101f3405517c"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "ebfd2bc055c6481a2e3b420f8598bb1e67733d399b578c54d647287c8fe15ff4"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v2|simple_llm|2",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "359758bba59e3d003a5174d06bd286dccb53dcb9e6ba94bab4b7525d003f8066"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "28441c9dfaa5874268932d99b3e827297980eab86e1dce35b89f007ec87bfcab"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "6b78a97dce6cce06d5dbe94c16fea95105b2aa930f3a4744b0750d0e8de82ce1"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "c0b44964e5c537ea19f12c45162048387946343a1cc3f5fd58a5fca9dc6c2039"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "10d38898815bb8734366de3ec6f0357e62949da382751085ba0336f4c81cbd4f"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "b4616e9146820167228f2ecde67fecc2fbc2afc649c52bc53ad953c1b3c9c882"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "6bc88b89dce865b48bd433168b884bc6dc6e1fd8a5ee6fce7fed0ea77bc2437f"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "ccd464120d6ae5496c88b9f3a7ce186a2a8491401f567a0f16095f0067126406"
+        }
+      ]
+    },
+    {
+      "key": "opaque_v2|simple_llm|3",
+      "facts": 119,
+      "tasks": [
+        {
+          "task": "P1",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "359758bba59e3d003a5174d06bd286dccb53dcb9e6ba94bab4b7525d003f8066"
+        },
+        {
+          "task": "P1",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "28441c9dfaa5874268932d99b3e827297980eab86e1dce35b89f007ec87bfcab"
+        },
+        {
+          "task": "P2",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "055f4a60184ae6efd37060c6a7b057d5b4a5ddf22944e3c5730c7e9a68027c97"
+        },
+        {
+          "task": "P2",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "89578376c6cecf23f07f9bf23e7338e8ff5bf310f7e3a6862f6ac62331602110"
+        },
+        {
+          "task": "P3",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "01984378c1c578e907a48e695b2eba31f65b98ff63d3540a400d1cfeaca85bcd"
+        },
+        {
+          "task": "P3",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "db9544a7ab5afa6218a3d922f675946098e740232e3a469ee3b285f13e4dd69f"
+        },
+        {
+          "task": "P4",
+          "condition": "graph",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "377d3f56f62e92f41494ab95d91ac413f1a0c62b721a1d27dfeee49e0603e63a"
+        },
+        {
+          "task": "P4",
+          "condition": "flat",
+          "perturbations": 22,
+          "followup_violations": [],
+          "primary_contexts_changed": 21,
+          "followup_context_sha256": "ad7cbf5041fe6c5b64a4f91f5927a9da8f78281fe27d59188e43d3dee6c4b49e"
+        }
+      ]
+    }
+  ]
+}

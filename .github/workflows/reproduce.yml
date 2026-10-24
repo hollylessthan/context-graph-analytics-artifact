@@ -1,0 +1,24 @@
+name: Verify frozen export
+on:
+  pull_request:
+    paths:
+      - 'evidence/**'
+      - 'scripts/**'
+      - '.github/workflows/reproduce.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reproduce stage-local experiment from original records
+        run: python scripts/reproduce_stage.py evidence/stage-local-evidence.zip
+      - name: Check additional manuscript claims
+        run: python scripts/check_additional_claims.py
+      - name: Check frozen summaries
+        run: python scripts/check_export.py
+      - name: Reproduce all paired outcomes and verify ZIP checksums
+        run: python scripts/reproduce_paired.py evidence/context-graph-paired-evidence-curated.zip

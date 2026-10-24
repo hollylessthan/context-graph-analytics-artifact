@@ -1,0 +1,3952 @@
+{
+  "analysis": "F1 offline: identity-invariant retrieval on saved graphs",
+  "provider_calls": 0,
+  "realization_facts_sha256": "03f4661390fd7cd9e20be5c368219dfbc7d07b9b46a182890b0bacd75f8fe9af",
+  "caps": [
+    8000,
+    4500
+  ],
+  "orderings": [
+    "document",
+    "reverse_document"
+  ],
+  "summary": {
+    "deterministic_schema|4500": {
+      "contexts": 12,
+      "document_frozen_complete": 7,
+      "document_edge_credit_complete": 10,
+      "reverse_document_frozen_complete": 0,
+      "reverse_document_edge_credit_complete": 10,
+      "orders_same_context": 0,
+      "orders_disagree_frozen": 7
+    },
+    "deterministic_schema|8000": {
+      "contexts": 12,
+      "document_frozen_complete": 9,
+      "document_edge_credit_complete": 10,
+      "reverse_document_frozen_complete": 10,
+      "reverse_document_edge_credit_complete": 10,
+      "orders_same_context": 0,
+      "orders_disagree_frozen": 1
+    },
+    "schema_llm|4500": {
+      "contexts": 36,
+      "document_frozen_complete": 9,
+      "document_edge_credit_complete": 24,
+      "reverse_document_frozen_complete": 0,
+      "reverse_document_edge_credit_complete": 24,
+      "orders_same_context": 0,
+      "orders_disagree_frozen": 9
+    },
+    "schema_llm|8000": {
+      "contexts": 36,
+      "document_frozen_complete": 13,
+      "document_edge_credit_complete": 27,
+      "reverse_document_frozen_complete": 15,
+      "reverse_document_edge_credit_complete": 25,
+      "orders_same_context": 0,
+      "orders_disagree_frozen": 6
+    },
+    "simple_llm|4500": {
+      "contexts": 36,
+      "document_frozen_complete": 8,
+      "document_edge_credit_complete": 25,
+      "reverse_document_frozen_complete": 0,
+      "reverse_document_edge_credit_complete": 24,
+      "orders_same_context": 0,
+      "orders_disagree_frozen": 8
+    },
+    "simple_llm|8000": {
+      "contexts": 36,
+      "document_frozen_complete": 22,
+      "document_edge_credit_complete": 28,
+      "reverse_document_frozen_complete": 12,
+      "reverse_document_edge_credit_complete": 26,
+      "orders_same_context": 0,
+      "orders_disagree_frozen": 10
+    }
+  },
+  "contexts": [
+    {
+      "method": "deterministic_schema",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "fbdc18826bca09b9a263eb26fe5ab07b6f486b0d767759ca8b05664149c45dfa",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "ea6f3bd5351e4f531ebbf0c2eade6a803e86cdc8e1710ec4a9a4e3a5e0f082e2",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "f362058347d5c93fc1ed2a8b98cf1df347a55a8cf3186bf5caf75535a93843a6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "ec806e7fbf577a9a987ae4a3f77922115e950af90860a692f48ce5a3a5a27181",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "f49af6d9d3e4401aed49129096437a8b6bf1d235fe40ce1a54dd09029e3cea30",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "1bb4def28e33c3ff308a6db5ecd1ee52869ef18824c7f370b762d24c2c2c358e",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "ad414f44e129bebeeddbe23c667222af8c078c8736076a741f090bf62dcdf805",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "02ee02888a123777f81aa1f875c47d824f653fa6d3bea2fb49fa16caa8acfda7",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "72cef8034dfca9266d4dedb903e6a06f3235550820dd8721c564c1a6af7197bb",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "d9b491b8255b96a94ca85da4a8fe5002e95a6a67a7b9916e336ebf1bab139a77",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "3c0573574816fcf7a3de6f77a0e59c052d7d11f67e2845b2b5789604e88f92af",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "ee28f33a25cbe0823113cbf6e4809efa999c041de4c42f96b62587b7352c219b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "d76f9d6d68a0c1e020dfab82e6f570cb1415059b28c5ae1de13d8dde0a2a9a87",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "7e7668e2e76ebacc7ad102cc6fabba50dab186b5f0722d2b3f300dc888fd94c5",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "5acc79e174f1e3439827dc1698f3cbe89f0b6b972ba21502e60e562d01b70bec",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "91573fae21c533d3eacbccbfb388c6ac90193801a9091cdcd70f9d7acd54216e",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "461d747fe31cb9000417184983568808fbabdeac5731c2a515a8737d241f5cbf",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "7da7f5645edd1905e2a8a753a07fbd0a771307c7fdac7f2a77809754864b9c84",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "d11a597cf41cc1395fc2ef8529fe513f50a169c42170aca0897bd75449b6c23e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "3a8f0003617027e33b1eff1c995fd24d14fe7d052f46d72d97226938689010ba",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_id"
+      ],
+      "document_context_sha256": "3af87abbd11eace27bccd7448a961501d318c8d145989af9ed9b45b958e3d138",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "543a3fbfac5cf4047da4181fd2884637327d6ba23a2ebf56e59eb1774f7c781d",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "35442fcdf09bbf28c441ae61a285d797252176befffa68a81ad870b427312f59",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "f681caf0be975900afe7ec4e7c8a6029bc21d3a83994d60a919be0a5318d8962",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "c975505f95d763b2ab0cd2edc41a6cbe180fa280914dcaabb320a497283f1f7a",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "7da7f5645edd1905e2a8a753a07fbd0a771307c7fdac7f2a77809754864b9c84",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "d11a597cf41cc1395fc2ef8529fe513f50a169c42170aca0897bd75449b6c23e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "3a8f0003617027e33b1eff1c995fd24d14fe7d052f46d72d97226938689010ba",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "ff311cebbbf5ee37c81bd15493fc042b76dc132966f3cf18e00248343c904273",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "9449ba40302572ad6d399193f9311b5243ff16b7ad3e785f8810762752895819",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "071545a0f1cea482e29f2c79efd4d79768c747e138258fa5bdb0e3c6497e7c7b",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "29a65c3c71310e34559ceb2e4fbb4d4c9b3a56e52ed08dfb092772375333b9a1",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "a879360edb4636c343cb3a943fdd8ba590a2a65ae05e47cdbbe10c07a737ff5c",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "37ec9ba0c27700465a1ed35420d66c90e2ab7a9b4630b160d0940c39cccaeb5b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "b78ff8f16b0e3bacdc0992deb00ff3933dd2e14b5aa9aa4d773ec472c381f2e6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "23c486668390155f60e820e5135ae1ccc59fb8f5f2b1d404dae8857a440ee15c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_id"
+      ],
+      "document_context_sha256": "2f3b0972b39a9ba2ba1701dda608dd23d31dfeeb4344b51d241b423b9e7dbd14",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "833b362b58beacb4e8b2a4783539ed2173f1b46a7327437359f4f2cfeb709818",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "34f238207a1a54737a78551ce5c1fd5d0c404a535f2e0f3a373d9e8c794e016b",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "7a2dc032ebf19e0950da78c4219bb5fd07d13d4408e585d4b711527ba68dcdf2",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "8869311baad9885b9bc50d37b0e46f7341f5495220cefd243d44a04679a162a4",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "37ec9ba0c27700465a1ed35420d66c90e2ab7a9b4630b160d0940c39cccaeb5b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "b78ff8f16b0e3bacdc0992deb00ff3933dd2e14b5aa9aa4d773ec472c381f2e6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "23c486668390155f60e820e5135ae1ccc59fb8f5f2b1d404dae8857a440ee15c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "68caa9f5cf2cc6ae14af4c3531fd15a91296715bc4ac4747362e1ea6343c6b57",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "c697c2d124804f72db3d4e00dc9e67a29710cd2b97400872ac0cc602f2216425",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 0
+    },
+    {
+      "method": "deterministic_schema",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "818b0c30988bdfccd359196137f342f6b6ead4a61e3d9b69adb0943ab7c1c4af",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "6d313616f921ee217b6833b2430cac1df34971079a08f192e89d63eab5da8ef4",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 0
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "1b1a6c49e27de892a9b920bdd608dce514430dfc4002aa37e786ad74211a3ff5",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "c90febaf510e9e0512259a95adc843c9016bd10b873a812efc8fd3c0ece64876",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "d5cd9c968b5e8c3ba476b118370f11a39dd4e10cb6e6f3933b779eb785908aa4",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "6a1daaa5934a2d036ce515e118008f97bb0d611dde839147dfb09eb66e840da0",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "document_context_sha256": "7c65e9a6bb3e0f7c434b731fcc264b596e4e5c7708e575313b51ac11776f6831",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "reverse_document_context_sha256": "96447c6ce9a9dff0e905c62766c3aa0200ba5a2e5bd339c71643a5ea78ed6d06",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "document_context_sha256": "209c888b98872efb7cb79bc130f8a1adfa9c0c836ac9e8083c2a64e4f81c5e1f",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "reverse_document_context_sha256": "24b66321cc6fb33e723d5b2c4d2539c76fac493faca06002a471e45a422e64df",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "5c165c4deb7d68c11515ead6556547db7bc9b8c361eb3ce8c9eee9e91460c08d",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "reverse_document_context_sha256": "8f9cd3b5ede1a459321bb778cc702feb468534b8a29b44b4be94c906efcc7905",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "document_context_sha256": "18a37129192e7e04b7ee4891da4e3f0ce5d37def88400649bcdee55f288318d6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "reverse_document_context_sha256": "a61ff73e695be77c9e7bb652234865155eb25061eb33298317d5a5f13d178692",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "f55fe9278237e07c2a249aa17fd5cfeb5c6002425251f351a3abc1795eab5329",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "f00f571f1caea2b1cf180db69f8e5f990cbc5bf5a4378e97145cc69ad49c1215",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "6eb33fb4b694b9e08798f7d9d0e34bd9a2993cfea23712246467777eb9e5f17a",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "bf16c3164094d5e5eaf63f558b2bce2a6fb7587eda8c2fd3ec4ad5c31860f35f",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "643abea39357980a3f37e6c911b2f5a266a6c31b5efa45d14cec0c44d295423b",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "e2ff2e7d3af416265383e91a0ee7fc7409de6befc39e4405c30f6c8ac9762bc1",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "bf34c998fa34224b85c72ddde08685bc12885b13afa0ce7eed0aefd33ea68361",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "41e7f2f22a73eca3a9f5b21209545767d6f985209f6744e2a41ffac19bf61f3d",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:products.product_category_name",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "85c662a923f74ae3294b291ebd5c9c987cf7528f6e07bf89a771a00e3fe3ccfb",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "2f9e0d62520b266609daba748b7d546f266384ecb85c5272b8db1aae5c642b00",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "document_context_sha256": "39342492a011263793660c11a4c2653b47e14dab180b68522c4f7f21994abee8",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "reverse_document_context_sha256": "785efc848c27ffaf165f0013fe84379f6f80e1a7f4d31300b4db9bb0677d741c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "80d529a4f17fdf248970cd2e84be4f6972d4c13049e33491f29761b321a1e62a",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "reverse_document_context_sha256": "0c0cd33c1756be085b5b183a09850e037c3d666a17f8102fbd17fae2827da105",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "document_context_sha256": "e4a9d25d3c7d4a82c3d832b7391c6ba80aece434c102cf0852fc6fcc1bb10df4",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "reverse_document_context_sha256": "59b186e4616b8cf08643fff9485f6878c4a70d132faed819ffb50ab5e050093f",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "3bd20877653c301c5165b525b911b83a17cf7cd52b9488f584de101451731f87",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "728772501702716269ed734c5033d8ce9a85be07347db043c3223983d550d04c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "c25cdea6f212b81ea3a864cfe332cc7625b3faf03606ee9e4133de286e6cbc79",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "2b07b1ff1fe7d1c4c14c6edd7ed183be70dc851c39d0e299f5d281c7c2fcc548",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "c21b5bccdf9e4dcb4221b5317c344ff8e78e97b502e02434f4e8fa8a2a1ec261",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "b8bd9de1bd7e9546ffe06284cf391bc9a8e2a2f648ba30285cba92ab89fd6dde",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "e658c70848ae179886ec95c2f0d816710b142af5d10473ffc3695e3449b14ba2",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "2b5d744096b3830c992c1a0b01c7e433e50d1bce03569c04159449fdd8996c67",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "document_context_sha256": "5883115768904f9610de80af8ece12dcd92caecebd4cfe85f4ba3966ba6e3d36",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "reverse_document_context_sha256": "2655ce0cd200e7acbeacf83253a0a327e527f66b8af43840354f56b3d49d198f",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "document_context_sha256": "68f06d719f8cabf04e6ac4bf1830b66d9d02ac0169db86e14381c5a40e043815",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "reverse_document_context_sha256": "a2948cc6ba361a9ccb507794baff99f9f7a5f8329e6f29c308c8e912c952e956",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "e28e128a5414ed3892bab34ead9276e21a06f6615d4113ccb76f66161376497a",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "reverse_document_context_sha256": "8c2cf60327db2d2273cfd08a93e9de8c143ca39dd426fcb663de513ba65b4dc2",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "document_context_sha256": "521ad6903a8e6e5607b70e0831fc61bd79f0405e2c14c82e012ebcae0637ce71",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "reverse_document_context_sha256": "e38a2b86711c88c9a12f70c1eb74981bc078fbb22df6aeba76b8ac917a9f50b9",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "368aa12e62f89cf33aa9e0403987943c5d90cbcbce3192e8d003eb5225f71e08",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "63227f06770aa0b14f8022811c8ad83c31badb7ee6002abb41d13e2ca726c78e",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "557f2df48dc2730b3ccc2ba48d12656aea44d343c3cdffe8a7e5b60836d4beb5",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "f82f0959a145d88c388c2569917c008e201d85dfbca5e5ee0d3b1c0bda125724",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "e3233fbda9e6690d2d444574c30133e504dc62702611d68bfa4fe1c0f435c0eb",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "df88c0d90d70c24e35691af40ce47705a50a3d84a7dcaa2647c90000e54921c0",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "9b6f2b2361baf1c7cff968f15bb4b956fc67ece4c66d8745cc270eeb97e2c7ad",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "071f47be0a5ce4cfbd224a1277272795230afe4ddd3fbf6b6b0d94594e409b21",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:products.product_category_name",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "a71921cf5b9793314c460c069e3ad1f6b1b6dfd18857aeb8ae9ce8c21128b751",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "dc045e8ba39c1a1a7cfe8c99d585ead9875b3c337a8cb9b8a1c66d8987550eca",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "document_context_sha256": "9a6d88e4123f472fdcd0bd5c51d4a99fe5339ff5602d1454ec3c0eadf1bea739",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "reverse_document_context_sha256": "fcc11cd7271b1060f1ff1d478ff55a1e8721a554326c34d0ef542ddccca8ee10",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "ac53a0fce5ae6c91926b668471a547c02cdf1ab9c094fc07a27e5ef7eb5d6ac1",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "reverse_document_context_sha256": "abfa82b5c5f11ba4bcfd0cef4abd80b63ef4c291427ecdbf231591baaf51d9ac",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "document_context_sha256": "523841328aea9b5373bc68137c482249f3ce1b7d84e7ad4f2c01b9ead470fd1f",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id",
+        "column:orders.order_status"
+      ],
+      "reverse_document_context_sha256": "8fc1ce773df65f7316749e4bc0b64d333f0affd27b0554f3490ce77f11a6d43d",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "97b4d79df545f867ba450f1ad416e3e9c544332bbe0f1714110454b8b302e02c",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "e22b00243fd8eabb0bd74261766ee2cc24b140b884512b0c309304944b88a302",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "f1d3b9f52ac5bdbad8b6bebb46d5dbf5a999a5be87686ab4f1d2703ef3ba5227",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "830c96bd364866e9c926c43107570306cb4f6611fe492417c66742910749f919",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "35b9f13fe094b6a7c981daed3aa3884977e08421b5850540819b6f707ea26593",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "9fdf133e6d81ebf1087356016edba7c2d7cb982cca7ada29c8b3534aa7fabf05",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "96454c489a5ff858999ca9624f0143e55711ef7bfbd2cc5dad0717ea100763c8",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "441336b7168d45067da8c7faa6317a7376020cf75807f4d4dc5b22f36218acbe",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:products.product_category_name",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "6bc037594749d29c06ffc25ec8557b9cc3be25b1f968768f76044d183079f972",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "395684e1b3c178cb2b5f861d4b610a0b1e5ea1461a0a68f72d08be29e27b5f47",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "document_context_sha256": "e0a5fc0bc735b5e03fa42f6e8e0ae56d413e332f886f649df762245cc7aa84cf",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "reverse_document_context_sha256": "3c4e5da49ec8e9f0c630318a0b16a39d8f045e5f85f709cea718793ede812f93",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "e6089c147a3aa4f5b724e15faaea164014eaa87d10673f3060870d309e532364",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "5b3605221d4d388001b8bd3367cbc6503753fd398ca1f16ce0a53b58873e19f2",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "012429f1ad531eb344cd83bc019c3134e7ffd374b7dad72ae7a74cfcf62891d2",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "df99993cd94ed1263dc3276575b2f54049eb8dafe177b9e9a0c7e55ba38f39c1",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "74f35a1dec3a26839ba45e1f824d309cc9ad5440f5952ce7158bee2bc21efd74",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "311d2cada14f77e8677c35743f61c3b0f3df648cab640bdac39572102fea22e7",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "a85fe07e63f71a15d54f27aecda26fbd51077ed7aee90e75c5a92e89f6deaf75",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "dd8504aba6df03a2134d644c6a49b35d67ae624b6e8adc9d8d7616a190269902",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "bf07873757b0b1b4209e06f7e516f5e9ef451384a6d84cd1c8f2290ab4af6660",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "c3385ecb288162f7aacf48b2076be92dfaa74072190fea74632a3a3bdbb8d34a",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "bda3ee6e01a6ff823fd3dd8f3aea4363a2783c4e4912b8e08631b589d3568c51",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "07a94d15c5bd72c4194885295effb53953a69e35c9f0466575d0538344849582",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "document_context_sha256": "1c88950ab3ce51236a771a39126e3e5157de1f31f3b4b166412ebd467b97b861",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:products.product_category_name",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "reverse_document_context_sha256": "f83686b2076ad5a762abaa9bca41a31ce08c28bf37a1161c9cb9c15e38b36585",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "document_context_sha256": "09b6ad0286ca50dae367ae85432c21dc052f150ad7f78b049e1b7829a672116c",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:products.product_category_name<->translation.product_category_name"
+      ],
+      "reverse_document_context_sha256": "3adb240f274ff4b97dd4ac7d9397e62114354340507f5d0855d673dbec81a058",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "41a45891e6b220e164bdcfed8d6de2913138fd4533e0c1a60120f3966c5ddd0a",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "63e59d7741d809b33c83491109bdf4680ac1113b83e6e302fbcee28995ccea50",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "a9bd0fdd2af20d2461d35d47870a56227eb370d60f578a667a45eb237d05ef33",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_approved_at",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "c7e2109639557225c01d748aa4da868b7a29b5bda23218f83ed3c0ecb515bccd",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "cb0875a935b6c8717072e66a41c65d17e59919903d97449ba9b3f4c247c28e55",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "26da041523cd6bb5f54ea33044fd75f69f5fecba096efcf49f92d92e7a7b9a37",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "2e1059a94b659cb72be59613c39a4687764774c7538836dcf42184e8b3bdfed3",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.order_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "61f1796a82512309068a97947273945aac4463c5c3bb1c499a1084d86d86952e",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "c458f8e1a423dcf89035b8d3cfc2f312eb6afd81b1bcbef4ac9bcc81de452c02",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "5498e22179096eed0bb18a7c3fc391bc59fcde8cbf4f583e4c722a453ebe9dcb",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "5c57ea5a02b2bff27b73425038af289c2b41d1d6f179a5a94e21d7e54dd7ea80",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "2a743685d3e316d86ff3cceb5364a320d79b7b79692b79b4ec7ab69dba48c322",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "document_context_sha256": "1251ff066ca33fd1028a843f7f37c241c3ed27f912be41dd5ca9ba55e93cbf2f",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "relationship:order_items.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "735946c005d6b18109623af2ec42214e1341330231db211a2fb17fad6789728b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id"
+      ],
+      "document_context_sha256": "768fa26b81b35629be901a9a35c169429dfc47d1f587e33f8a920e48c790d2ab",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "93507d9513bba681f88314d87216bb9ad6de157dafcfda75a9d68d16a5ec0b7f",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "07aee5299e266ec52a71b282f7e3465b47a7d95f735604a9534f43b366089aa9",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "f6402f154129caac1f54ec027a16845b2f69e1e2b8925c80f1207090c37555ce",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id"
+      ],
+      "document_context_sha256": "5c57ea5a02b2bff27b73425038af289c2b41d1d6f179a5a94e21d7e54dd7ea80",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "b9ddb90c523d657e7b58b4cf406f4977628eaa5044d0d42ea651443430e3552f",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "8d40022a2b3e2c6b337808be4f30c5a4b2730042fc5e5a5805bfd20a2b429b27",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "39ea8ca2c75f970b65fd5a1b0acbac0f4bd90efac5621ae45b35055dd298f369",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "02abde00334e146323b6b83c3c814ea6cca1cc5b772f08fe8d45a0688213209a",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "4793ee5583393f0ef2eab023b03c19d886a7a7beafb09e54da8db3e978e081db",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "e3181c30d86605c36516cbaea09d936119dc78676e8051069b918125622ec443",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "2a766d63addb1f989ab55a7fdfdac65700f617d8330ac67ccd1a281ba27ee0a7",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "d11a597cf41cc1395fc2ef8529fe513f50a169c42170aca0897bd75449b6c23e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "3a8f0003617027e33b1eff1c995fd24d14fe7d052f46d72d97226938689010ba",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "document_context_sha256": "8a081808787df931038f442a394f7ae744569da63ebdd17f7d4a1cde23f34317",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "relationship:order_items.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "10d5f13e8408e05fcf91d81a95cabe8d9aa5fc907c50b407148f3711c5f62768",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.order_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:order_reviews.review_score",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "document_context_sha256": "3b27fec3b5a6af5f0a2728e2c3bb6cd8f8c229fee73437925ba64d6077dc9db7",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "aef7ce667e17277d408834474653d82e6819db236486a40a2e4cd696b8f8a80a",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "93d42f69f845ba854304e85170b667a4efedc4d32a48145cd533f71c21a44373",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "2a766d63addb1f989ab55a7fdfdac65700f617d8330ac67ccd1a281ba27ee0a7",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "d11a597cf41cc1395fc2ef8529fe513f50a169c42170aca0897bd75449b6c23e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "3a8f0003617027e33b1eff1c995fd24d14fe7d052f46d72d97226938689010ba",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "4c2d5991fa8c355d2508047ff69eba16e12819d385db8c3ccae99ca9e9792d11",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "bd5d766b32df2520f7642883782324eeae4354e9aa6dced3795d7abbbfacc84e",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "33f3f99ec120f95fccad5982a79e104d45dfd18bb7436bfa7664c29403a3a02d",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id",
+        "column:sellers.seller_id"
+      ],
+      "reverse_document_context_sha256": "a57fe4111cf1eb73b1bbfe05f6225df6dcd6edf662b26a8e7ce4032fc27149c0",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "e3181c30d86605c36516cbaea09d936119dc78676e8051069b918125622ec443",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "2a766d63addb1f989ab55a7fdfdac65700f617d8330ac67ccd1a281ba27ee0a7",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "d11a597cf41cc1395fc2ef8529fe513f50a169c42170aca0897bd75449b6c23e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "3a8f0003617027e33b1eff1c995fd24d14fe7d052f46d72d97226938689010ba",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "document_context_sha256": "c838f9fa3ed9039bdf9dd642cf060dfc548ac6aa511f0140a3c67ef9a12ec7a6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "relationship:order_items.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "7e94e494f1d94340862ac862f19d94fa50592157ff90be211467669a1ca3e2c0",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "document_context_sha256": "0c1332d5eb8902c47d53fb5670995d4c01d2868ac3a23312400497c3542bbdc7",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "619b5be041a43e569ece4a475aa3d410a203ae7e0eb737565a758210aefed29a",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "93d42f69f845ba854304e85170b667a4efedc4d32a48145cd533f71c21a44373",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "2a766d63addb1f989ab55a7fdfdac65700f617d8330ac67ccd1a281ba27ee0a7",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "d11a597cf41cc1395fc2ef8529fe513f50a169c42170aca0897bd75449b6c23e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "3a8f0003617027e33b1eff1c995fd24d14fe7d052f46d72d97226938689010ba",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "952498e016021be70e7a2332ad7aa02a0a7f242482426a1bcbc9771abfc0eabf",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "4093ad68001fee9faf851c6ee726ea4abcd869f28e88a7294c507088d4af202e",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "2927ec653d9863463a96b01592dacc7bd13b06c9bad1a60c0d61f4ca79baff8d",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "964f1cce66e892e3a6cf7dede0615e788c60b5e7732395a3d50c840d4dd0c672",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "324faac4028a3ed6c7b3bebb22f2a60e6a716974da1a3481be9c042a37cc7798",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "4c7f45e75cad0df76b14ddec4ee62f9f3365ac14ba1dd53a2eaebbbec9be4358",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "a65ecd4bfb83e766736423902c8b3dee7651611c270483cd85a28941925d9636",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "6ea0c1f0e4241ba7afd198bd003453379a8b31b4af0f8d37218af6c8d69f8888",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_id"
+      ],
+      "document_context_sha256": "27801ecf21193fd2539428025226e2506fee64590c29bd37d6d4956534b77d06",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_purchase_timestamp"
+      ],
+      "reverse_document_context_sha256": "a6407060785d725be116a608804d8ebdd726a6579f336229cc0893e13cbee2a2",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "541b661a9649e2a9801f508350151f9c086aaab542064b7e029c4501aa29a148",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id"
+      ],
+      "reverse_document_context_sha256": "30fdd6b1758824694ad54484bf3271ca69c1e85dfa44f199d98119fe1f4e32b9",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "79426956e9a0c0147ec50b0f10b119f2bb63b502987d05425df7f549b76db723",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "4c7f45e75cad0df76b14ddec4ee62f9f3365ac14ba1dd53a2eaebbbec9be4358",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "a65ecd4bfb83e766736423902c8b3dee7651611c270483cd85a28941925d9636",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "6ea0c1f0e4241ba7afd198bd003453379a8b31b4af0f8d37218af6c8d69f8888",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "8f6577cc2721bef6abaa911fb5fe522766c6d77e424d855e9b4b8fb1ebdc9d56",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "d11dd2c95d06039ec7e20b985e70189f25d891aedc8f10239563befa2781de5f",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "f5c45136bfda05d89a03ddfd487d40a262ed0b6108000c13cb88b70ccb6b97e7",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "5045719a472616568e039732c392c011becdfe95798913b6026da54869da90ff",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "324faac4028a3ed6c7b3bebb22f2a60e6a716974da1a3481be9c042a37cc7798",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "4c7f45e75cad0df76b14ddec4ee62f9f3365ac14ba1dd53a2eaebbbec9be4358",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "a65ecd4bfb83e766736423902c8b3dee7651611c270483cd85a28941925d9636",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "6ea0c1f0e4241ba7afd198bd003453379a8b31b4af0f8d37218af6c8d69f8888",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_id"
+      ],
+      "document_context_sha256": "27801ecf21193fd2539428025226e2506fee64590c29bd37d6d4956534b77d06",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_purchase_timestamp"
+      ],
+      "reverse_document_context_sha256": "a6407060785d725be116a608804d8ebdd726a6579f336229cc0893e13cbee2a2",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "541b661a9649e2a9801f508350151f9c086aaab542064b7e029c4501aa29a148",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id"
+      ],
+      "reverse_document_context_sha256": "30fdd6b1758824694ad54484bf3271ca69c1e85dfa44f199d98119fe1f4e32b9",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "b82bb5f335ff066c6656312aca3885e492c65b97d6aea26fe43ad776623379a3",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "2c80cc3058595b1beedbd10dab068247c0bcff807cd8c514f507f31dcf57fab2",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "670488ebb7e328b4616da5423254f2b1c875a62e9103e1b124030a63f3b5c36c",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "92277a802e7e077a5cdd5eda37a5d056bf680c8508fc4db3a664ceedd8515f17",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "29e1f588716f39d5d2b53f3704158a0ec088a9424f4546e853423a71585c163c",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "ad7d42c1cd0d4d7d6e6efcef2629360086e95cd31ecf7d59f7983c59890b6317",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "a9106c151f63dfc700829d8a4ce160bafa3690b774d2f512e584ae6407dc9ef6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "bcf6873bc0bfdda7d36a993ee1eadc5b6c194794369e1fcbe0dfdd2671904971",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "324faac4028a3ed6c7b3bebb22f2a60e6a716974da1a3481be9c042a37cc7798",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "4c7f45e75cad0df76b14ddec4ee62f9f3365ac14ba1dd53a2eaebbbec9be4358",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "a65ecd4bfb83e766736423902c8b3dee7651611c270483cd85a28941925d9636",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "6ea0c1f0e4241ba7afd198bd003453379a8b31b4af0f8d37218af6c8d69f8888",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_id"
+      ],
+      "document_context_sha256": "27801ecf21193fd2539428025226e2506fee64590c29bd37d6d4956534b77d06",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_purchase_timestamp"
+      ],
+      "reverse_document_context_sha256": "a6407060785d725be116a608804d8ebdd726a6579f336229cc0893e13cbee2a2",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "541b661a9649e2a9801f508350151f9c086aaab542064b7e029c4501aa29a148",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id"
+      ],
+      "reverse_document_context_sha256": "30fdd6b1758824694ad54484bf3271ca69c1e85dfa44f199d98119fe1f4e32b9",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "a9741a314a356ab4ed108f71401f70f2f8d50fe15a3238c27c17a3c1a7da696a",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "673a67a96ce3db4dfa79480c3fd4a7219d0cc0952792ee67c7576262a18106f7",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "5abc4130261d2e51ccd700de95948c33ae3eacbbc2a8a1b0aa2a8e8edb5c2d3f",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "f1ab2c663cf4fe46c8c11fceafcd7b1babfe12896980c2fc7400d2b0291074f4",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "8cd94fdd307bd27c0eb1717e7f112fcdaf75d8072369a6408902f06308adfaf9",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "49e03581a08508d9ad80649d3256db8708f8e57474875dbf379ee7ef1f7d9082",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "92a2c96662d7142d9b2568ef61d759686150ff6dad69d65b5e9a6caca4145a44",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "d5b8e46be8222e6afc4393e6d775e33ec7e35ba96e26f5a2df8c39461de4f9f1",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "e3b056ce61d6e692cf0946a69e0a2aca707b856ccfeedf39f19251f7636214cf",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "c04543dc636116fca85b51bf1909459394ec184cd99943c6541c7f1fa1515609",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "b78ff8f16b0e3bacdc0992deb00ff3933dd2e14b5aa9aa4d773ec472c381f2e6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "23c486668390155f60e820e5135ae1ccc59fb8f5f2b1d404dae8857a440ee15c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id"
+      ],
+      "document_context_sha256": "7208ec4dc542fee0310c48a5152868814aac1e7936f2e0f2c4871bab287fcfe1",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp"
+      ],
+      "reverse_document_context_sha256": "a3b10454be1b617394d6cd03019480efc963e34f50f253cf62dd0a0034dd9dd5",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "c645cd052982f15c49f4679ea73c5f680e252cee7c800dcf593c841a912bcd07",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id"
+      ],
+      "reverse_document_context_sha256": "a512c79af6c44397a56a3ebd17955e80557f0857e1e777e3d54e5d0d60029c44",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "9ff98803590564f979aa464a67140b938a4e47b66504a5a0734c7bc79b39e437",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "c04543dc636116fca85b51bf1909459394ec184cd99943c6541c7f1fa1515609",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "b78ff8f16b0e3bacdc0992deb00ff3933dd2e14b5aa9aa4d773ec472c381f2e6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "23c486668390155f60e820e5135ae1ccc59fb8f5f2b1d404dae8857a440ee15c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "da08b775de62400a6c68b2c1f202bebc54b0d418cb8d7fbe4411b0cc202ffbc8",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "48c8f9002afea275d8391a7530e046f9622223aef790dfb1e9a4946d56c8e109",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "54d43355fcd1c060dbd24c70e9ac0f88f24470be5b917e677e8fc4d246520218",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "f0fa0c00738cf9223803c799605b8e1dd934bb726ba4be1e54e4e414490ba0e4",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "e3b056ce61d6e692cf0946a69e0a2aca707b856ccfeedf39f19251f7636214cf",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "c04543dc636116fca85b51bf1909459394ec184cd99943c6541c7f1fa1515609",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "b78ff8f16b0e3bacdc0992deb00ff3933dd2e14b5aa9aa4d773ec472c381f2e6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "23c486668390155f60e820e5135ae1ccc59fb8f5f2b1d404dae8857a440ee15c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:products.product_category_name",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "3850fdea65539665370f1f3adeb999c3d89a8770d429992ad583bb4328f07b81",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "relationship:order_items.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "218b518fbf04f3399505f14702d7df4c5a764f2631a50608f996810670b66b5c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "document_context_sha256": "dbf6a19cadc6e0b3741e03b1b3cf114eea39a58a0ff332fe715aed9a917892ed",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "99a9851a6fa431493e28a45beac5ac9ac56cf9349bd962b1e577f4fd54d3362f",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "9ff98803590564f979aa464a67140b938a4e47b66504a5a0734c7bc79b39e437",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "c04543dc636116fca85b51bf1909459394ec184cd99943c6541c7f1fa1515609",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "b78ff8f16b0e3bacdc0992deb00ff3933dd2e14b5aa9aa4d773ec472c381f2e6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "23c486668390155f60e820e5135ae1ccc59fb8f5f2b1d404dae8857a440ee15c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "d272bebf305f37e60a994d78ec3b241982dbcca7f8c5bec2254e8639db4f6380",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "7a99904f3baa6581b34434c9733e3fdc20f04b8f866a224e8daf0d55afe54226",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "b9a78ce1067a05824fa5c7d02fad0b6213cde56d8d61d71521318bf2fc564552",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "97fe74acb681db5421e69d6cba243a156457b1da8836a5c3a483b0b845ddb17a",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "e3b056ce61d6e692cf0946a69e0a2aca707b856ccfeedf39f19251f7636214cf",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "c04543dc636116fca85b51bf1909459394ec184cd99943c6541c7f1fa1515609",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "b78ff8f16b0e3bacdc0992deb00ff3933dd2e14b5aa9aa4d773ec472c381f2e6",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "23c486668390155f60e820e5135ae1ccc59fb8f5f2b1d404dae8857a440ee15c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "b9cfd49c6e2a2ccb56c608e83a0757c5b26cb192220fc3e07dac97e090619466",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "relationship:order_items.product_id<->products.product_id"
+      ],
+      "reverse_document_context_sha256": "d5b0761f78681a4302613f692cecd70ac3a0a1692c2ffa2f1d5e2cccfffb6386",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "document_context_sha256": "62c952714f3b9be4c51f56d944233632f290f5fa7a041ee6e6cb3faa3c375803",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id",
+        "relationship:order_items.product_id<->products.product_id",
+        "relationship:order_reviews.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "9d00a4c95274de67ce16f87c865d44f1feb549662cb64f250dc97401f88210a0",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "f2f6b5b9aa21a63c0accdde3ff90ce1e0a484b79de7b94d5d1d0b4e3b413b8f5",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "6eb66c020af86392ec99395a5c3a39354b45bde900311db379930d929f21e5c4",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "93adfa54dd084ec3329fee7a581851c39218118c46933cce3b36d5cd64636293",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "ae8b2af4fa7c3295a24c0c4cf55e75daaec8cd98bf0598b61426268254e89214",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "317fcf4fa0e62508d809d21c5be1e9b55168505244d2be5639fd756c5894993c",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "d123b21b3835e7cec85ce045c2b0120c71fade6d214d1ddc45e5e6f0f30761ea",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "bcb1bc5710c0def4712250c11043b76a1bdcd64379bbe8649ecdffbc6d310965",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "1726df19846b04a6258b3793f05f5c520fdc28dc24de8dc9bf9237a8c01ec273",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "a54072dd46ef98ce13ce98dcc7e723dff79dfc0f84da95a90a4cecef4ca0e1f7",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "8f087459f53a7c58c532aa932cad32381fae4d5c35606ab6150a76f283184f0b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "04d40cead069c5452b9150f04ed710f91425cadeb75ebfb7e4d8d3299ade119e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "d4847c9c0b8e1ccb6462aeeee8ae507bdb34b54fe73851531bc5e34f7db88f1d",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_id"
+      ],
+      "document_context_sha256": "6b78a97dce6cce06d5dbe94c16fea95105b2aa930f3a4744b0750d0e8de82ce1",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_purchase_timestamp"
+      ],
+      "reverse_document_context_sha256": "cb18b9346be65f9b740a7804ba131171334d26c2e3daee22b3c6a90031ddb165",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "17e81bc9f11e26469957b8cbd3dc8b1c1a0d33a63a8b6e30be71e0e3c4974683",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id"
+      ],
+      "reverse_document_context_sha256": "006763adc31842efc6dc9a404f30b4a8e7f6f39d9f2218bb42474d1ccc665fa9",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "6680c6d6d82f96b27c9f8bb410b966aebcaf4e51a2af484154a0f53d00cff1e5",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "8f087459f53a7c58c532aa932cad32381fae4d5c35606ab6150a76f283184f0b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "04d40cead069c5452b9150f04ed710f91425cadeb75ebfb7e4d8d3299ade119e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "d4847c9c0b8e1ccb6462aeeee8ae507bdb34b54fe73851531bc5e34f7db88f1d",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "1bfb034a3ea7d42edb146caa3c514f2d6d5328edbb6c8a279eb9101f3405517c",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "8b3e863886fba223badd9436c63f355c1b29fba1be382f2bb012af58ca44db55",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "e2b676842cc3f7beca67b003f39ee9b62543b8a5e8af1ef58791ce74c18ec0b1",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "5896385e4ad9e9ced2d5f64fba74a7214b2d1c3b41865326dca2232c6067898b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 1
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "359758bba59e3d003a5174d06bd286dccb53dcb9e6ba94bab4b7525d003f8066",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "8f087459f53a7c58c532aa932cad32381fae4d5c35606ab6150a76f283184f0b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "04d40cead069c5452b9150f04ed710f91425cadeb75ebfb7e4d8d3299ade119e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "d4847c9c0b8e1ccb6462aeeee8ae507bdb34b54fe73851531bc5e34f7db88f1d",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_id"
+      ],
+      "document_context_sha256": "6b78a97dce6cce06d5dbe94c16fea95105b2aa930f3a4744b0750d0e8de82ce1",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_purchase_timestamp"
+      ],
+      "reverse_document_context_sha256": "cb18b9346be65f9b740a7804ba131171334d26c2e3daee22b3c6a90031ddb165",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:products.product_id"
+      ],
+      "document_context_sha256": "17e81bc9f11e26469957b8cbd3dc8b1c1a0d33a63a8b6e30be71e0e3c4974683",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id"
+      ],
+      "reverse_document_context_sha256": "006763adc31842efc6dc9a404f30b4a8e7f6f39d9f2218bb42474d1ccc665fa9",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "10d38898815bb8734366de3ec6f0357e62949da382751085ba0336f4c81cbd4f",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "50a761044400cdbeb1f9dff37828f43701a5e19fedaf4bba9c2f5a864bfc321c",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "73ffbe93d3a05e7cca89af75102df6dd22ab1bfae81c16acb36940fb845fe3db",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "0243254370444dd9780e0b773fa36ca0cb936c17cdc9d208c058cf45ab069438",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id"
+      ],
+      "document_context_sha256": "6bc88b89dce865b48bd433168b884bc6dc6e1fd8a5ee6fce7fed0ea77bc2437f",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "c819d6bae7b807858b0ba094f83c59ef510a81cf59cf69000317538c0a1861c5",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "d540229052792d3139a04d7c8517590e334d516a2176ce3e6f53ff43d1ec8e52",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "0f02c4875b5d86478e2a27171343dd21ab6aa871f1474f8f76f973cc27b6afb1",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 2
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "359758bba59e3d003a5174d06bd286dccb53dcb9e6ba94bab4b7525d003f8066",
+      "reverse_document_frozen_complete": true,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [],
+      "reverse_document_context_sha256": "8f087459f53a7c58c532aa932cad32381fae4d5c35606ab6150a76f283184f0b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P1",
+      "cap": 4500,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "04d40cead069c5452b9150f04ed710f91425cadeb75ebfb7e4d8d3299ade119e",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "d4847c9c0b8e1ccb6462aeeee8ae507bdb34b54fe73851531bc5e34f7db88f1d",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "document_context_sha256": "055f4a60184ae6efd37060c6a7b057d5b4a5ddf22944e3c5730c7e9a68027c97",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "relationship:order_items.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "20222e31dc77da90d37ab9aae2a08edd1f712193e367616eb35fe333757a1b9b",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P2",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": false,
+      "document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_id",
+        "column:translation.product_category_name",
+        "column:translation.product_category_name_english"
+      ],
+      "document_context_sha256": "d6d60cea62713c4e9b0799d90b7c1f61ab8b34e40d80074a6e27deecb062ab2d",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": false,
+      "reverse_document_frozen_missing": [
+        "column:order_items.product_id",
+        "column:order_reviews.review_answer_timestamp",
+        "column:order_reviews.review_creation_date",
+        "column:order_reviews.review_id",
+        "column:orders.order_id",
+        "column:orders.order_purchase_timestamp",
+        "column:products.product_category_name",
+        "column:products.product_id",
+        "column:translation.product_category_name_english",
+        "relationship:order_items.order_id<->orders.order_id"
+      ],
+      "reverse_document_context_sha256": "25a30b0fc995c3a009a58a85ae4ec765ced0623aa9e920733f1881fce67fda0e",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 8000,
+      "document_frozen_complete": true,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [],
+      "document_context_sha256": "01984378c1c578e907a48e695b2eba31f65b98ff63d3540a400d1cfeaca85bcd",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "ffbaf74ecc0d9182ade8abcd22c4dd139e3d70b54498ca084b4a7940d0ef3df6",
+      "orders_same_context": false,
+      "orders_disagree_frozen": true,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P3",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "document_context_sha256": "f66a651b1532e43189b7012ccd409ef09afdeae513c6bbde4be817c6cb0e9acc",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:customers.customer_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "23eb08ebf10087321e1d576831e6ae88d870e6a6fd299104b2f3a2bd19de12f5",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 8000,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "377d3f56f62e92f41494ab95d91ac413f1a0c62b721a1d27dfeee49e0603e63a",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "1c41f70c69ecc7d0560ae8dbe6947ca3d6583f3a6804eebc85ee5e768f71ef74",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "task": "P4",
+      "cap": 4500,
+      "document_frozen_complete": false,
+      "document_edge_credit_complete": true,
+      "document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id",
+        "column:sellers.seller_id"
+      ],
+      "document_context_sha256": "e2ed6f83c4c464937c5e99b932854af23a04fc64be272ce73d8ba47bc8fc1857",
+      "reverse_document_frozen_complete": false,
+      "reverse_document_edge_credit_complete": true,
+      "reverse_document_frozen_missing": [
+        "column:order_items.seller_id",
+        "column:orders.order_id"
+      ],
+      "reverse_document_context_sha256": "a26dbfca60cb09f7d5001fefa48b296c6e5c356b95863e056172706c11a679a2",
+      "orders_same_context": false,
+      "orders_disagree_frozen": false,
+      "realization": 3
+    }
+  ]
+}

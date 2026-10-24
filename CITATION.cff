@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this research artifact, please cite this software release."
+type: software
+title: "Context-Graph Analytics: Frozen Reproduction Artifact"
+abstract: >-
+  Frozen, offline-verifiable evidence accompanying Evaluating Context-Graph
+  Construction for Analytical Agents: Hidden Confounders and Lessons from a
+  Controlled Benchmark. Re-aggregates saved analytical-context comparisons
+  and paired planner outcomes without model API calls.
+authors:
+  - family-names: Lo
+    given-names: Fangyu
+repository-code: "https://github.com/hollylessthan/context-graph-analytics-artifact"
+version: "1.0.0"
+license: Apache-2.0
+keywords:
+  - agentic analytics
+  - context graphs
+  - reproducibility
+  - information retrieval

@@ -1,0 +1,20 @@
+{
+  "title": "Context-Graph Analytics: Frozen Reproduction Artifact",
+  "upload_type": "software",
+  "description": "Frozen reproduction artifact for the study Evaluating Context-Graph Construction for Analytical Agents: Hidden Confounders and Lessons from a Controlled Benchmark. Includes saved context-graph stage-local comparisons, paired planner scored records, source provenance, and offline result re-aggregation scripts. This release does not re-run model inference or original SQL execution.",
+  "creators": [
+    {
+      "name": "Lo, Fangyu",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "keywords": [
+    "context-graph analytics",
+    "agentic analytics",
+    "reproducibility",
+    "retrieval confounders"
+  ],
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "version": "1.0.0"
+}

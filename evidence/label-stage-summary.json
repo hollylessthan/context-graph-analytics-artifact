@@ -1,0 +1,372 @@
+{
+  "scope": "Exploratory frozen-artifact diagnosis; no counterfactual SQL outcomes or prevalence estimate",
+  "rubric_commit": "a1360dc6c1de4d04f0224135f7b0ffd4ba40ddb6",
+  "config_sha256": "ca7b71bc2ca8464034c56f1db6bc5a4701fa9f4324d55c2e32fb47c75f3af369",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "script_sha256": "f3efc5498f857d43a545f5794ad56db01f8e281cf4713b7ace8748225ac92002",
+  "inputs": {
+    "scope": "Frozen inputs and rubric for exploratory stage-local saved-artifact audit",
+    "repository_base": "8bc84f8a60aafbbce4fef09df892e7353848013e",
+    "plan_commit": "d37f408dfc6e8e1633a4a0bbd2876dad2ead9da4",
+    "plan_sha256": "348affc9d82cc99bf392d29928f4480f1348dede375ff117e7af0eb9a9e6278f",
+    "rubric_sha256": "758df9f32024b09cf10ca9184236c91a5d46def14685e3b83fa16248f2b26f0c",
+    "code_and_evaluation_sha256": {
+      "scripts/primary_retrieval.py": "cb4bb560cdf113bd7a61d08efb43ac1ed841b87c4bbe7e71dfc8dbf09e2d51d2",
+      "scripts/retrieval_controls.py": "4637a8a801e8bfa8c9594ed179410dbcf97ba2a78d05d6be4962ccff5daec41a",
+      "scripts/primary_evidence_scorer.py": "6af3bf2ea604795811762a9a1aad5c7a666279af0629d6fbb528055f7feeea62",
+      "scripts/followup_retrieval.py": "0e2d95e716a90175fcbbc178e88e4ab8cdc2356a47236d5d85004a662709811c",
+      "scripts/fact_artifacts.py": "7279d60c522ded93d6185f59455937b9e463700e20dc6d0f15a88d9f818cad83",
+      "scripts/primary_package_runtime.py": "c1d991875fecc648f3731af95c9d6e7e00e5f8c96ac9d3fb5eeaa6dbfd6ab1b7",
+      "config/primary-benchmark-manifest.json": "f60de8af31a3867854762888b8cb4c9f45f4871b924d16f95b529e9387dc8771",
+      "config/primary-planner-contract.json": "dabe3e723d2fa0bd2e4dd1e080514698d7945bbcb02db7902f1c84f25486b0c4",
+      "config/primary-required-evidence.json": "876f1187c949b8598e14d8cf34b24c09ce50d39e16c1b35455f66b1db8d4a99d",
+      "evaluation/primary/alias-maps.json": "054fd6c2745a7b8c6dbdd9527a5ca5f984a8ba4574403ea7e15419a33c17cfff",
+      "evaluation/primary/review-followups.json": "73f181aaefdf4136c0a7080d01d695fb0943bef1f7adfb5b59e5f3db617ca1d7"
+    },
+    "artifact_sha256": {
+      "realization_facts": "03f4661390fd7cd9e20be5c368219dfbc7d07b9b46a182890b0bacd75f8fe9af",
+      "phase_a_records": "121ab69a23b8c73039ac083154d526e05b3a5e3937c93805d08efd2fe1773bb1",
+      "phase_b_records": "02e4a00d3cb540834595a98ce7bd6fee65bddc3f4d3e40af6cdb96e90dde256e"
+    },
+    "package_manifest_sha256": {
+      "canonical": "84d1e5a1d8d88b74413cc361a6040fedfc5794ec96ba458488c41b438c88c097",
+      "opaque_v1": "a05d6614d28e0eb8833a45f4a0756baac3c9b6343816576eefbbfa0a1f620340",
+      "opaque_v2": "99e82d49236bda6ee5fd338f9518cc284597b4c42a142581f24a65c7f181a1d5"
+    },
+    "maximum_characters": 8000,
+    "graphs": 18,
+    "original_contexts": 72,
+    "factorial_contexts": 576,
+    "switches": [
+      "lexical",
+      "lookup",
+      "packing"
+    ],
+    "provider_calls": 0
+  },
+  "provider_calls": 0,
+  "sql_executions": 0,
+  "maximum_characters": 8000,
+  "controls": {
+    "original_contexts_reproduced": 72,
+    "independent_swapped_endpoints_reproduced": 72,
+    "held_id_relabellings_unchanged": 72,
+    "input_shuffles_unchanged": 72,
+    "graph_task_bm25_score_arrays_unchanged": 72
+  },
+  "queries": {
+    "P1": "How did the order-cancellation rate change from November 2017 to February 2018, and what were the customer-state contributions and within/mix components? purchased order with a resolvable customer state An included order is cancelled when its recorded business-status value is `canceled`. Customer state. missing_customer missing_customer_state",
+    "P2": "How did mean order-review score change from August 2017 to February 2018, decomposed by product category for reviewed single-category delivered orders? order whose recorded status is delivered, with one selected review and one resolved product category Select one review per order by creation timestamp DESC NULLS LAST, then answer timestamp DESC NULLS LAST, then review identifier DESC (lexical). Compute the mean selected numeric score. Translated product category, falling back to the source category and then the exact literal '(no category)'. A missing source category counts as one distinct category, including when mixed with a nonmissing category; exclude multiple distinct source categories. not_eligible_delivered no_review missing_item_or_product multi_category",
+    "P3": "How did mean purchase-to-customer delivery duration change from November 2017 to April 2018? Report the component-stage changes and customer-state within/mix contributions. delivered order with all required lifecycle timestamps and a resolvable customer state Fractional days from purchase to customer delivery, decomposed into purchase-to-approval, approval-to-carrier, and carrier-to-customer stages. Retain recorded negative stages and report their count. Customer state. not_eligible_delivered missing_lifecycle_timestamp missing_customer missing_customer_state",
+    "P4": "How did mean per-order freight share change from November 2017 to April 2018 for commercially active orders whose sellers all belong to one state, decomposed by seller state? purchased order whose recorded business-status value is neither `canceled` nor `unavailable`, with at least one priced item and exactly one resolved seller state For each included order, freight share is total item freight divided by total item price plus freight; report the mean order-level share. Seller state; multiple sellers in the same state remain one included order. not_commercially_active missing_item_or_seller multi_state nonpositive_order_total"
+  },
+  "mask_order": [
+    "lexical",
+    "lookup",
+    "packing"
+  ],
+  "summary": {
+    "graphs": 18,
+    "factorial_contexts": 576,
+    "original_support_contexts": 72,
+    "required_item_instances": 846,
+    "arms": [
+      {
+        "method": "simple_llm",
+        "mask": "000",
+        "contexts": 36,
+        "strict_complete": 19,
+        "edge_complete": 26,
+        "visible_set_changes_from_original": 0,
+        "context_hash_changes_from_original": 0
+      },
+      {
+        "method": "simple_llm",
+        "mask": "001",
+        "contexts": 36,
+        "strict_complete": 15,
+        "edge_complete": 27,
+        "visible_set_changes_from_original": 20,
+        "context_hash_changes_from_original": 36
+      },
+      {
+        "method": "simple_llm",
+        "mask": "010",
+        "contexts": 36,
+        "strict_complete": 21,
+        "edge_complete": 29,
+        "visible_set_changes_from_original": 26,
+        "context_hash_changes_from_original": 26
+      },
+      {
+        "method": "simple_llm",
+        "mask": "011",
+        "contexts": 36,
+        "strict_complete": 16,
+        "edge_complete": 29,
+        "visible_set_changes_from_original": 28,
+        "context_hash_changes_from_original": 36
+      },
+      {
+        "method": "simple_llm",
+        "mask": "100",
+        "contexts": 36,
+        "strict_complete": 19,
+        "edge_complete": 26,
+        "visible_set_changes_from_original": 5,
+        "context_hash_changes_from_original": 6
+      },
+      {
+        "method": "simple_llm",
+        "mask": "101",
+        "contexts": 36,
+        "strict_complete": 15,
+        "edge_complete": 28,
+        "visible_set_changes_from_original": 20,
+        "context_hash_changes_from_original": 36
+      },
+      {
+        "method": "simple_llm",
+        "mask": "110",
+        "contexts": 36,
+        "strict_complete": 21,
+        "edge_complete": 28,
+        "visible_set_changes_from_original": 26,
+        "context_hash_changes_from_original": 27
+      },
+      {
+        "method": "simple_llm",
+        "mask": "111",
+        "contexts": 36,
+        "strict_complete": 16,
+        "edge_complete": 29,
+        "visible_set_changes_from_original": 28,
+        "context_hash_changes_from_original": 36
+      },
+      {
+        "method": "schema_llm",
+        "mask": "000",
+        "contexts": 36,
+        "strict_complete": 18,
+        "edge_complete": 28,
+        "visible_set_changes_from_original": 0,
+        "context_hash_changes_from_original": 0
+      },
+      {
+        "method": "schema_llm",
+        "mask": "001",
+        "contexts": 36,
+        "strict_complete": 17,
+        "edge_complete": 24,
+        "visible_set_changes_from_original": 24,
+        "context_hash_changes_from_original": 36
+      },
+      {
+        "method": "schema_llm",
+        "mask": "010",
+        "contexts": 36,
+        "strict_complete": 18,
+        "edge_complete": 28,
+        "visible_set_changes_from_original": 29,
+        "context_hash_changes_from_original": 29
+      },
+      {
+        "method": "schema_llm",
+        "mask": "011",
+        "contexts": 36,
+        "strict_complete": 17,
+        "edge_complete": 24,
+        "visible_set_changes_from_original": 33,
+        "context_hash_changes_from_original": 36
+      },
+      {
+        "method": "schema_llm",
+        "mask": "100",
+        "contexts": 36,
+        "strict_complete": 17,
+        "edge_complete": 28,
+        "visible_set_changes_from_original": 7,
+        "context_hash_changes_from_original": 9
+      },
+      {
+        "method": "schema_llm",
+        "mask": "101",
+        "contexts": 36,
+        "strict_complete": 17,
+        "edge_complete": 24,
+        "visible_set_changes_from_original": 25,
+        "context_hash_changes_from_original": 36
+      },
+      {
+        "method": "schema_llm",
+        "mask": "110",
+        "contexts": 36,
+        "strict_complete": 17,
+        "edge_complete": 28,
+        "visible_set_changes_from_original": 31,
+        "context_hash_changes_from_original": 31
+      },
+      {
+        "method": "schema_llm",
+        "mask": "111",
+        "contexts": 36,
+        "strict_complete": 17,
+        "edge_complete": 24,
+        "visible_set_changes_from_original": 33,
+        "context_hash_changes_from_original": 36
+      }
+    ],
+    "paired_stage_effects": [
+      {
+        "method": "simple_llm",
+        "stage": "lexical",
+        "paired_contrasts": 144,
+        "visible_set_changed": 20,
+        "visible_multiset_changed": 20,
+        "context_hash_changed": 24,
+        "strict_completeness_changed": 0,
+        "edge_completeness_changed": 2,
+        "strict_missing_changed": 6,
+        "edge_missing_changed": 4
+      },
+      {
+        "method": "simple_llm",
+        "stage": "lookup",
+        "paired_contrasts": 144,
+        "visible_set_changed": 102,
+        "visible_multiset_changed": 102,
+        "context_hash_changed": 102,
+        "strict_completeness_changed": 10,
+        "edge_completeness_changed": 10,
+        "strict_missing_changed": 20,
+        "edge_missing_changed": 15
+      },
+      {
+        "method": "simple_llm",
+        "stage": "packing",
+        "paired_contrasts": 144,
+        "visible_set_changed": 75,
+        "visible_multiset_changed": 75,
+        "context_hash_changed": 144,
+        "strict_completeness_changed": 18,
+        "edge_completeness_changed": 6,
+        "strict_missing_changed": 51,
+        "edge_missing_changed": 18,
+        "contrasts_with_feasible_score_displacement": 70,
+        "original_upstream_contexts_with_feasible_displacement": 17,
+        "original_upstream_original_arm_selects_lower": 17,
+        "original_upstream_swapped_arm_selects_lower": 15
+      },
+      {
+        "method": "schema_llm",
+        "stage": "lexical",
+        "paired_contrasts": 144,
+        "visible_set_changed": 28,
+        "visible_multiset_changed": 28,
+        "context_hash_changed": 36,
+        "strict_completeness_changed": 2,
+        "edge_completeness_changed": 0,
+        "strict_missing_changed": 4,
+        "edge_missing_changed": 1
+      },
+      {
+        "method": "schema_llm",
+        "stage": "lookup",
+        "paired_contrasts": 144,
+        "visible_set_changed": 116,
+        "visible_multiset_changed": 116,
+        "context_hash_changed": 116,
+        "strict_completeness_changed": 8,
+        "edge_completeness_changed": 0,
+        "strict_missing_changed": 42,
+        "edge_missing_changed": 13
+      },
+      {
+        "method": "schema_llm",
+        "stage": "packing",
+        "paired_contrasts": 144,
+        "visible_set_changed": 96,
+        "visible_multiset_changed": 96,
+        "context_hash_changed": 144,
+        "strict_completeness_changed": 22,
+        "edge_completeness_changed": 16,
+        "strict_missing_changed": 68,
+        "edge_missing_changed": 35,
+        "contrasts_with_feasible_score_displacement": 94,
+        "original_upstream_contexts_with_feasible_displacement": 24,
+        "original_upstream_original_arm_selects_lower": 23,
+        "original_upstream_swapped_arm_selects_lower": 24
+      }
+    ],
+    "support_by_saved_outcome": [
+      {
+        "outcome_category": "explicit_refusal_in_sql",
+        "contexts": 12,
+        "strict_complete": 0,
+        "edge_complete": 0,
+        "identifier_upper_complete": 0,
+        "strict_missing_items": 57,
+        "missing_item_categories_nonexclusive": {
+          "absent_identifier": 31,
+          "internal_translation_mapping": 4,
+          "join_endpoint": 17,
+          "profile_mention": 5
+        },
+        "items_with_unresolved_visible_semantic_scope": 6
+      },
+      {
+        "outcome_category": "pass",
+        "contexts": 55,
+        "strict_complete": 37,
+        "edge_complete": 50,
+        "identifier_upper_complete": 50,
+        "strict_missing_items": 22,
+        "missing_item_categories_nonexclusive": {
+          "absent_identifier": 5,
+          "internal_translation_mapping": 2,
+          "join_endpoint": 15,
+          "profile_mention": 2
+        },
+        "items_with_unresolved_visible_semantic_scope": 2
+      },
+      {
+        "outcome_category": "table_name_rejection",
+        "contexts": 4,
+        "strict_complete": 0,
+        "edge_complete": 4,
+        "identifier_upper_complete": 4,
+        "strict_missing_items": 4,
+        "missing_item_categories_nonexclusive": {
+          "join_endpoint": 4,
+          "profile_mention": 1
+        },
+        "items_with_unresolved_visible_semantic_scope": 0
+      },
+      {
+        "outcome_category": "wrong_answer",
+        "contexts": 1,
+        "strict_complete": 0,
+        "edge_complete": 0,
+        "identifier_upper_complete": 0,
+        "strict_missing_items": 1,
+        "missing_item_categories_nonexclusive": {
+          "absent_identifier": 1
+        },
+        "items_with_unresolved_visible_semantic_scope": 0
+      }
+    ]
+  },
+  "limitations": [
+    "One implementation, one dataset, four tasks; no independent external replication.",
+    "BM25 score preference is not an oracle for analytical usefulness.",
+    "Identifier availability and accepted structural coverage are not analytical sufficiency or necessity.",
+    "Saved SQL outcomes apply only to original contexts; no perturbed-context accuracy is measured.",
+    "Manual review of missing-item witnesses is unblinded and uses a prospectively frozen rubric."
+  ],
+  "output_sha256": {
+    "catalogs.json.gz": "e3defbee3d93c00cc54a1c7c93073349a8957abf4c133dd6431c02e880429171",
+    "factorial.json.gz": "3eed43c77a236c42d23fa19b3e2c6793c25b4f5c6cb92cb5dbd765adbb9cc81f",
+    "support.json.gz": "e9f4f18913f1ec5930545670c24361902b521149a57315b6ccad35940f2d353a",
+    "pairs.json.gz": "ff73ea1c0ef20bf466f4d90a21b16d91e3ed0cef5e0cc227bd794e7d62ddf084"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "scope": "Two native component probes under fixed upstream ordering and explicit reference costs; not full framework execution",
+  "function_freeze_commit": "f7af4f54c50d0e0125f155d8390334fd9821cd88",
+  "source_manifest_sha256": "fe79fcb4a0f04c601b9f08cf258ae89d05c5ab5a81c034a62c239c22702291ae",
+  "script_sha256": "aa71c77629195b5c3a50ff378b5d81482937e7c76a887314f2c2b6229aacb4f1",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pandas_version": "2.2.3",
+  "provider_calls": 0,
+  "embeddings_computed": 0,
+  "sql_executions": 0,
+  "dataset_native_component_calls": 864,
+  "native_conformance": {
+    "native_fixture_calls": 4,
+    "same_reference_budget": 8000,
+    "graphrag_selected_counts": [
+      0,
+      1
+    ],
+    "lightrag_selected_counts": [
+      0,
+      1
+    ],
+    "scope": "Oversized-first and small-first implementation fixtures; not saved-data or native-tokenizer evidence"
+  },
+  "graphs": 18,
+  "fixed_queries": {
+    "P1": "How did the order-cancellation rate change from November 2017 to February 2018, and what were the customer-state contributions and within/mix components? purchased order with a resolvable customer state An included order is cancelled when its recorded business-status value is `canceled`. Customer state. missing_customer missing_customer_state",
+    "P2": "How did mean order-review score change from August 2017 to February 2018, decomposed by product category for reviewed single-category delivered orders? order whose recorded status is delivered, with one selected review and one resolved product category Select one review per order by creation timestamp DESC NULLS LAST, then answer timestamp DESC NULLS LAST, then review identifier DESC (lexical). Compute the mean selected numeric score. Translated product category, falling back to the source category and then the exact literal '(no category)'. A missing source category counts as one distinct category, including when mixed with a nonmissing category; exclude multiple distinct source categories. not_eligible_delivered no_review missing_item_or_product multi_category",
+    "P3": "How did mean purchase-to-customer delivery duration change from November 2017 to April 2018? Report the component-stage changes and customer-state within/mix contributions. delivered order with all required lifecycle timestamps and a resolvable customer state Fractional days from purchase to customer delivery, decomposed into purchase-to-approval, approval-to-carrier, and carrier-to-customer stages. Retain recorded negative stages and report their count. Customer state. not_eligible_delivered missing_lifecycle_timestamp missing_customer missing_customer_state",
+    "P4": "How did mean per-order freight share change from November 2017 to April 2018 for commercially active orders whose sellers all belong to one state, decomposed by seller state? purchased order whose recorded business-status value is neither `canceled` nor `unavailable`, with at least one priced item and exactly one resolved seller state For each included order, freight share is total item freight divided by total item price plus freight; report the mean order-level share. Seller state; multiple sellers in the same state remain one included order. not_commercially_active missing_item_or_seller multi_state nonpositive_order_total"
+  },
+  "budget_reference_units": 8000,
+  "cost_units": "UTF-8 bytes through the native tokenizer injection point; reference costs, not native/BPE token counts. Native tokenizer unavailable.",
+  "results": [
+    {
+      "implementation": "graphrag",
+      "baseline_cases": 72,
+      "cases_with_active_bound": 0,
+      "minimum_selected_records": 19,
+      "maximum_selected_records": 33,
+      "interventions": [
+        {
+          "intervention": "label_derived_ids",
+          "cases": 72,
+          "occurrence_set_changed": 0,
+          "analytical_set_changed": 0,
+          "analytical_multiset_changed": 0,
+          "analytical_order_changed": 0,
+          "raw_output_changed": 0
+        },
+        {
+          "intervention": "permuted_existing_ids",
+          "cases": 72,
+          "occurrence_set_changed": 0,
+          "analytical_set_changed": 0,
+          "analytical_multiset_changed": 0,
+          "analytical_order_changed": 0,
+          "raw_output_changed": 0
+        },
+        {
+          "intervention": "held_id_label_swap",
+          "cases": 72,
+          "occurrence_set_changed": 0,
+          "analytical_set_changed": 0,
+          "analytical_multiset_changed": 0,
+          "analytical_order_changed": 0,
+          "raw_output_changed": 0
+        },
+        {
+          "intervention": "restored_original_ids",
+          "cases": 72,
+          "occurrence_set_changed": 0,
+          "analytical_set_changed": 0,
+          "analytical_multiset_changed": 0,
+          "analytical_order_changed": 0,
+          "raw_output_changed": 0
+        },
+        {
+          "intervention": "input_shuffle",
+          "cases": 72,
+          "occurrence_set_changed": 0,
+          "analytical_set_changed": 0,
+          "analytical_multiset_changed": 0,
+          "analytical_order_changed": 72,
+          "raw_output_changed": 72
+        }
+      ]
+    },
+    {
+      "implementation": "lightrag",
+      "baseline_cases": 72,
+      "cases_with_active_bound": 72,
+      "minimum_selected_records": 28,
+      "maximum_selected_records": 36,
+      "interventions": [
+        {
+          "intervention": "label_derived_ids",
+          "cases": 72,
+          "occurrence_set_changed": 0,
+          "analytical_set_changed": 0,
+          "analytical_multiset_changed": 0,
+          "analytical_order_changed": 0,
+          "raw_output_changed": 72
+        },
+        {
+          "intervention": "permuted_existing_ids",
+          "cases": 72,
+          "occurrence_set_changed": 0,
+          "analytical_set_changed": 0,
+          "analytical_multiset_changed": 0,
+          "analytical_order_changed": 0,
+          "raw_output_changed": 72
+        },
+        {
+          "intervention": "held_id_label_swap",
+          "cases": 72,
+          "occurrence_set_changed": 0,
+          "analytical_set_changed": 0,
+          "analytical_multiset_changed": 0,
+          "analytical_order_changed": 0,
+          "raw_output_changed": 72
+        },
+        {
+          "intervention": "restored_original_ids",
+          "cases": 72,
+          "occurrence_set_changed": 0,
+          "analytical_set_changed": 0,
+          "analytical_multiset_changed": 0,
+          "analytical_order_changed": 0,
+          "raw_output_changed": 0
+        },
+        {
+          "intervention": "input_shuffle",
+          "cases": 72,
+          "occurrence_set_changed": 72,
+          "analytical_set_changed": 72,
+          "analytical_multiset_changed": 72,
+          "analytical_order_changed": 72,
+          "raw_output_changed": 72
+        }
+      ]
+    }
+  ],
+  "not_executed": [
+    "Native graph construction, entity embedding search or vector-store tie handling",
+    "GraphRAG community/entity/relationship context sections outside the selected source branch",
+    "LightRAG KG quota selection, optional reranking, full dynamic prompt-budget allocation",
+    "Native tokenizer budgets, generation and analytical answer evaluation"
+  ],
+  "decision_boundary": "Only a native metadata-only analytical selection change can count as a component replication; input-order-only changes do not.",
+  "cases_sha256": "3ba6400f0fcb433b71c8322e24546fe0b8a26d354da0d4250f9f0e7b7993480a"
+}
