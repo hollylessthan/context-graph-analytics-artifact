@@ -19,10 +19,10 @@ All checks run offline on the committed exported evidence. The line references b
 | Three discordant cases | `evidence/context-graph-paired-evidence-curated.zip`: scored-results.json | `scripts/reproduce_paired.py:65-66` |
 | Two external probes: 0/72 ID changes; LightRAG 72/72 shuffle | `evidence/external-selection-summary.json` | `scripts/check_additional_claims.py:28-35` |
 
-The scripts now check the listed paper-level aggregates from frozen records. This is retrospective record-based verification, not rerunning the original inference or SQL execution.
-
 | P3 included units 7,288 / 6,798 and one reclassified order | `evidence/paired-discordance-validation.json` p3_data_checks | `scripts/check_additional_claims.py:6-9` |
 | External budget binding: GraphRAG 0/72, LightRAG 72/72 | `evidence/external-selection-summary.json` | `scripts/check_additional_claims.py:28-30` |
 | Graph construction recall 1.0, precision 48/49 | `evidence/primary-results.json` E6 | `scripts/check_additional_claims.py:26` |
 | Paid paired run: 264 calls, $3.62 | `evidence/context-graph-paired-evidence-curated.zip` collection-summary.json | `scripts/reproduce_paired.py:17-18` |
 | Four table-name rejections were edge-complete | `evidence/stage-local-evidence.zip` support.json.gz | `scripts/check_additional_claims.py:53` |
+
+The scripts check these aggregates against frozen records. They do not rerun the original model inference or SQL execution.
