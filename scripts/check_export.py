@@ -20,4 +20,4 @@ assert read("paired-discordance-validation.json")["run_id"]==40120563599
 external=read("external-selection-summary.json")
 assert external["provider_calls"]==0 and len(external["results"])==2
 print("PASS: frozen original comparisons, 16 factorial summary rows, 44 packing changes, paired audit provenance, external summaries.")
-print("SCOPE: summary-level checks only. Raw independent reproduction is not yet included.")
+print("SCOPE: checks frozen summary records; companion scripts independently re-aggregate paired and stage-local traces.")
