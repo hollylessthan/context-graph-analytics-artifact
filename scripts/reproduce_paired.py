@@ -14,8 +14,8 @@ def check(archive):
         scores=read("scored-results.json")
         summary=read("paired-summary.json")
         collection=read("collection-summary.json")
-        assert collection["completed_operations"]==264
-        assert abs(collection["ledger"]["estimated_usd"]-3.6223495)<0.005
+        assert collection["completed_operations"]==264 and collection["ledger"]["calls"]==264
+        assert abs(float(collection["ledger"]["usd"])-3.6223495)<0.005
         assert len(scores)==264
         assert summary["observed_calls"]==264
         by=collections.defaultdict(dict)
