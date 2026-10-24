@@ -12,8 +12,11 @@ All checks run offline on the committed exported evidence. Python line numbers b
 | Stage impacts 48/218/171 and packing 44/72 | `evidence/stage-local-evidence.zip`: pairs and factorial | `scripts/reproduce_stage.py` |
 | 84 strict gaps; 36 join, 8 other, 37 absent, 3 relationships | `evidence/stage-local-evidence.zip`: support.json.gz | `scripts/check_additional_claims.py` |
 | 50/55 passing trials with edge-complete context | `evidence/stage-local-evidence.zip`: support.json.gz | `scripts/check_additional_claims.py` |
+| Table III each support stratum | `evidence/context-graph-paired-evidence-curated.zip`: plan.json and scored-results.json | `scripts/reproduce_paired.py` |
+| P3 five two-error lists and separate P2 COLUMNS validation | same scored-results.json | `scripts/reproduce_paired.py` |
+| 41 feasible packing witnesses and 40 original-order relevance overrides | `evidence/stage-local-evidence.zip`: pairs.json.gz | `scripts/reproduce_stage.py` |
 | Table III totals: 264 calls, 132 pairs; 92/34/6/0 outcomes | `evidence/context-graph-paired-evidence-curated.zip`: scored-results.json and paired-summary.json | `scripts/reproduce_paired.py` |
 | Three discordant cases | `evidence/context-graph-paired-evidence-curated.zip`: scored-results.json | `scripts/reproduce_paired.py` |
 | Two external probes: 0/72 ID changes; LightRAG 72/72 shuffle | `evidence/external-selection-summary.json` | `scripts/check_additional_claims.py` |
 
-**Pending stricter validation:** prespecified support-stratum rows of Table III, witness-level 41/72 and 40/72 relevance overrides, and detailed P3/P2 evaluator-error lists. These are not yet independently checked by the scripts. Do not declare every manuscript number validated until these gates are closed.
+The scripts now check the listed paper-level aggregates from frozen records. This is retrospective record-based verification, not rerunning the original inference or SQL execution.

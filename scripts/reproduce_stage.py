@@ -21,6 +21,11 @@ def check(path):
     changes=collections.Counter(p['stage'] for p in pairs if p['comparison']['visible_set_changed'])
     assert changes=={'lexical':48,'lookup':218,'packing':171},changes
     assert sum(bool(x['versus_original']['visible_set_changed']) for x in fac if x['mask']=='001')==44
+    packing=[x for x in pairs if x['stage']=='packing' and x['left_mask']=='000' and x['right_mask']=='001' and x['comparison']['visible_set_changed']]
+    assert len(packing)==44
+    feasible=sum(any(w.get('witnesses',{}).get('feasible') for w in row.get('packing_displacements',[])) for row in packing)
+    original_lower=sum(any(w['selected_arm']=='000' and w.get('witnesses',{}).get('feasible') for w in row.get('packing_displacements',[])) for row in packing)
+    assert (feasible,original_lower)==(41,40),(feasible,original_lower)
     labels=collections.Counter(x['outcome_category'] for x in support)
     assert labels=={'pass':55,'explicit_refusal_in_sql':12,'table_name_rejection':4,'wrong_answer':1},labels
     print('PASS stage local: hashes, all 16 factorial cells, 44/72 packing changes, 48/218/171 stage effects and support categories')
