@@ -1,0 +1,17 @@
+name: Verify frozen export
+on:
+  pull_request:
+    paths:
+      - 'evidence/**'
+      - 'scripts/**'
+      - '.github/workflows/reproduce.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/check_export.py

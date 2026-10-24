@@ -1,0 +1,155 @@
+{
+  "provider_calls": 0,
+  "run_id": 40120563599,
+  "context_checks": {
+    "canonical|schema_llm|1|P3": {
+      "support_stratum": "edge_lost",
+      "arms": {
+        "000": {
+          "records": 45,
+          "edge_complete": true,
+          "edge_missing": [],
+          "strict_missing": [
+            "column:customers.customer_id"
+          ],
+          "order_status_mentioned_anywhere": true
+        },
+        "001": {
+          "records": 44,
+          "edge_complete": false,
+          "edge_missing": [
+            "column:orders.order_status"
+          ],
+          "strict_missing": [
+            "column:orders.order_status"
+          ],
+          "order_status_mentioned_anywhere": false
+        }
+      },
+      "records_only_in_000": 11,
+      "records_only_in_001": 10
+    },
+    "canonical|schema_llm|2|P3": {
+      "support_stratum": "edge_lost",
+      "arms": {
+        "000": {
+          "records": 43,
+          "edge_complete": true,
+          "edge_missing": [],
+          "strict_missing": [
+            "column:customers.customer_id"
+          ],
+          "order_status_mentioned_anywhere": true
+        },
+        "001": {
+          "records": 44,
+          "edge_complete": false,
+          "edge_missing": [
+            "column:orders.order_status"
+          ],
+          "strict_missing": [
+            "column:orders.order_status"
+          ],
+          "order_status_mentioned_anywhere": false
+        }
+      },
+      "records_only_in_000": 11,
+      "records_only_in_001": 12
+    },
+    "canonical|simple_llm|1|P2": {
+      "support_stratum": "edge_missing_set_changed",
+      "arms": {
+        "000": {
+          "records": 45,
+          "edge_complete": false,
+          "edge_missing": [
+            "column:order_reviews.review_id",
+            "column:translation.product_category_name_english"
+          ],
+          "strict_missing": [
+            "column:order_reviews.review_id",
+            "column:products.product_id",
+            "column:translation.product_category_name_english"
+          ],
+          "order_status_mentioned_anywhere": true
+        },
+        "001": {
+          "records": 43,
+          "edge_complete": false,
+          "edge_missing": [
+            "column:order_reviews.review_id"
+          ],
+          "strict_missing": [
+            "column:order_items.order_id",
+            "column:order_reviews.order_id",
+            "column:order_reviews.review_id",
+            "column:orders.order_id",
+            "column:products.product_id"
+          ],
+          "order_status_mentioned_anywhere": true
+        }
+      },
+      "records_only_in_000": 13,
+      "records_only_in_001": 11
+    }
+  },
+  "p3_data_checks": {
+    "2017-11": {
+      "reference_exclusions": {
+        "cohort_orders": 7544,
+        "included": 7288,
+        "excluded_by_reason": {
+          "not_eligible_delivered": 255,
+          "missing_lifecycle_timestamp": 1,
+          "missing_customer": 0,
+          "missing_customer_state": 0
+        }
+      },
+      "contract_rule_counts": {
+        "included": 7288,
+        "not_eligible_delivered": 255,
+        "missing_lifecycle_timestamp": 1
+      },
+      "proxy_rule_counts": {
+        "included": 7288,
+        "not_eligible_delivered": 256
+      },
+      "contract_rule_reproduces_reference": true,
+      "included_sets_identical": true,
+      "units_with_different_reason": [
+        {
+          "order_id": "2d1e2d5bf4dc7227b3bfebb81328c15f",
+          "order_status": "delivered",
+          "contract_reason": "missing_lifecycle_timestamp",
+          "proxy_reason": "not_eligible_delivered",
+          "missing_lifecycle_fields": [
+            "order_delivered_customer_date"
+          ]
+        }
+      ]
+    },
+    "2018-04": {
+      "reference_exclusions": {
+        "cohort_orders": 6939,
+        "included": 6798,
+        "excluded_by_reason": {
+          "not_eligible_delivered": 141,
+          "missing_lifecycle_timestamp": 0,
+          "missing_customer": 0,
+          "missing_customer_state": 0
+        }
+      },
+      "contract_rule_counts": {
+        "included": 6798,
+        "not_eligible_delivered": 141
+      },
+      "proxy_rule_counts": {
+        "included": 6798,
+        "not_eligible_delivered": 141
+      },
+      "contract_rule_reproduces_reference": true,
+      "included_sets_identical": true,
+      "units_with_different_reason": []
+    }
+  }
+}

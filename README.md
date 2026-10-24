@@ -1,1 +1,14 @@
-# context-graph-analytics-artifact
+# Context-Graph Analytics: Reproduction Artifact
+
+**Staged export, not yet a completed reproducibility release.** Companion to *Evaluating Context-Graph Construction for Analytical Agents: Hidden Confounders and Lessons from a Controlled Benchmark* by Fangyu Lo (Independent Researcher).
+
+Original code and studies: https://github.com/hollylessthan/context-graph-analytics-study
+
+## Offline summary validation
+Run `python scripts/check_export.py` with Python 3.11+. No API keys or paid calls needed. GitHub Actions also checks these summaries.
+
+Current checks verify frozen original totals 30/36 versus 25/36, eight factorial combinations for both methods, 44 packing-selected evidence-set changes, and paired/external audit summary provenance. **They do not reproduce the original experiment from raw traces.**
+
+The 264-call paired raw run is preserved as [workflow artifact 12571928596](https://github.com/hollylessthan/context-graph-analytics-study/actions/runs/40120563599/artifacts/12571928596), pending safe export and completeness validation.
+
+Read [EXPORT_SCOPE.md](EXPORT_SCOPE.md) before approving a versioned release or Zenodo deposition.

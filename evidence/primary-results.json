@@ -1,0 +1,1244 @@
+{
+  "inference_limits": [
+    "Treating the 180 planner trials as independent observations",
+    "Confidence intervals that resample trials as if independent",
+    "Claims of a universal construction-method ranking",
+    "Treating the opaque variants as independent datasets",
+    "Generalization beyond the pinned model, reasoning level, prompts, chunk/cap parameters and Olist dataset",
+    "Ranking the LLM methods against the deterministic reference ceiling as competing methods",
+    "Claiming a graph-topology-only effect: graph/flat also differ in ranking and relation priority",
+    "Calling lexical_source a validated strong retrieval baseline",
+    "Interpreting cap-bound evidence loss as intrinsic construction-method quality"
+  ],
+  "variance_sources": "LLM arms: shared construction plus planner variation; fixed-context arms: planner variation only. Descriptive comparisons.",
+  "scope": "Pre-registered descriptive estimands; controlled Olist case study, not a universal ranking",
+  "E1_case_pass": [
+    {
+      "case_id": "P1-canonical",
+      "task_id": "P1",
+      "variant": "canonical",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-canonical",
+      "task_id": "P1",
+      "variant": "canonical",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-canonical",
+      "task_id": "P1",
+      "variant": "canonical",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-canonical",
+      "task_id": "P1",
+      "variant": "canonical",
+      "condition": "schema_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-canonical",
+      "task_id": "P1",
+      "variant": "canonical",
+      "condition": "simple_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v1",
+      "task_id": "P1",
+      "variant": "opaque_v1",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v1",
+      "task_id": "P1",
+      "variant": "opaque_v1",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v1",
+      "task_id": "P1",
+      "variant": "opaque_v1",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v1",
+      "task_id": "P1",
+      "variant": "opaque_v1",
+      "condition": "schema_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v1",
+      "task_id": "P1",
+      "variant": "opaque_v1",
+      "condition": "simple_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v2",
+      "task_id": "P1",
+      "variant": "opaque_v2",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v2",
+      "task_id": "P1",
+      "variant": "opaque_v2",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v2",
+      "task_id": "P1",
+      "variant": "opaque_v2",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v2",
+      "task_id": "P1",
+      "variant": "opaque_v2",
+      "condition": "schema_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P1-opaque-v2",
+      "task_id": "P1",
+      "variant": "opaque_v2",
+      "condition": "simple_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-canonical",
+      "task_id": "P2",
+      "variant": "canonical",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-canonical",
+      "task_id": "P2",
+      "variant": "canonical",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-canonical",
+      "task_id": "P2",
+      "variant": "canonical",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-canonical",
+      "task_id": "P2",
+      "variant": "canonical",
+      "condition": "schema_llm",
+      "passes": 1,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-canonical",
+      "task_id": "P2",
+      "variant": "canonical",
+      "condition": "simple_llm",
+      "passes": 2,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v1",
+      "task_id": "P2",
+      "variant": "opaque_v1",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v1",
+      "task_id": "P2",
+      "variant": "opaque_v1",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v1",
+      "task_id": "P2",
+      "variant": "opaque_v1",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v1",
+      "task_id": "P2",
+      "variant": "opaque_v1",
+      "condition": "schema_llm",
+      "passes": 0,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v1",
+      "task_id": "P2",
+      "variant": "opaque_v1",
+      "condition": "simple_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v2",
+      "task_id": "P2",
+      "variant": "opaque_v2",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v2",
+      "task_id": "P2",
+      "variant": "opaque_v2",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v2",
+      "task_id": "P2",
+      "variant": "opaque_v2",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v2",
+      "task_id": "P2",
+      "variant": "opaque_v2",
+      "condition": "schema_llm",
+      "passes": 0,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P2-opaque-v2",
+      "task_id": "P2",
+      "variant": "opaque_v2",
+      "condition": "simple_llm",
+      "passes": 0,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-canonical",
+      "task_id": "P3",
+      "variant": "canonical",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-canonical",
+      "task_id": "P3",
+      "variant": "canonical",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-canonical",
+      "task_id": "P3",
+      "variant": "canonical",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-canonical",
+      "task_id": "P3",
+      "variant": "canonical",
+      "condition": "schema_llm",
+      "passes": 0,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-canonical",
+      "task_id": "P3",
+      "variant": "canonical",
+      "condition": "simple_llm",
+      "passes": 2,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v1",
+      "task_id": "P3",
+      "variant": "opaque_v1",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v1",
+      "task_id": "P3",
+      "variant": "opaque_v1",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v1",
+      "task_id": "P3",
+      "variant": "opaque_v1",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v1",
+      "task_id": "P3",
+      "variant": "opaque_v1",
+      "condition": "schema_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v1",
+      "task_id": "P3",
+      "variant": "opaque_v1",
+      "condition": "simple_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v2",
+      "task_id": "P3",
+      "variant": "opaque_v2",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v2",
+      "task_id": "P3",
+      "variant": "opaque_v2",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v2",
+      "task_id": "P3",
+      "variant": "opaque_v2",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v2",
+      "task_id": "P3",
+      "variant": "opaque_v2",
+      "condition": "schema_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P3-opaque-v2",
+      "task_id": "P3",
+      "variant": "opaque_v2",
+      "condition": "simple_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-canonical",
+      "task_id": "P4",
+      "variant": "canonical",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-canonical",
+      "task_id": "P4",
+      "variant": "canonical",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-canonical",
+      "task_id": "P4",
+      "variant": "canonical",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-canonical",
+      "task_id": "P4",
+      "variant": "canonical",
+      "condition": "schema_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-canonical",
+      "task_id": "P4",
+      "variant": "canonical",
+      "condition": "simple_llm",
+      "passes": 2,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v1",
+      "task_id": "P4",
+      "variant": "opaque_v1",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v1",
+      "task_id": "P4",
+      "variant": "opaque_v1",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v1",
+      "task_id": "P4",
+      "variant": "opaque_v1",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v1",
+      "task_id": "P4",
+      "variant": "opaque_v1",
+      "condition": "schema_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v1",
+      "task_id": "P4",
+      "variant": "opaque_v1",
+      "condition": "simple_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v2",
+      "task_id": "P4",
+      "variant": "opaque_v2",
+      "condition": "deterministic_schema",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v2",
+      "task_id": "P4",
+      "variant": "opaque_v2",
+      "condition": "identical_facts_flat",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v2",
+      "task_id": "P4",
+      "variant": "opaque_v2",
+      "condition": "lexical_source",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v2",
+      "task_id": "P4",
+      "variant": "opaque_v2",
+      "condition": "schema_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    },
+    {
+      "case_id": "P4-opaque-v2",
+      "task_id": "P4",
+      "variant": "opaque_v2",
+      "condition": "simple_llm",
+      "passes": 3,
+      "n": 3,
+      "missing": 0,
+      "rankable": true
+    }
+  ],
+  "E2_task_pass": [
+    {
+      "task_id": "P1",
+      "condition": "simple_llm",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P1",
+      "condition": "schema_llm",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P1",
+      "condition": "deterministic_schema",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P1",
+      "condition": "lexical_source",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P1",
+      "condition": "identical_facts_flat",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P2",
+      "condition": "simple_llm",
+      "passes": 5,
+      "n": 9,
+      "proportion": 0.5555555555555556,
+      "clopper_pearson_95": [
+        0.2120085067788678,
+        0.8630043377348335
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P2",
+      "condition": "schema_llm",
+      "passes": 1,
+      "n": 9,
+      "proportion": 0.1111111111111111,
+      "clopper_pearson_95": [
+        0.0028091367465991612,
+        0.48249651491733714
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P2",
+      "condition": "deterministic_schema",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P2",
+      "condition": "lexical_source",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P2",
+      "condition": "identical_facts_flat",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P3",
+      "condition": "simple_llm",
+      "passes": 8,
+      "n": 9,
+      "proportion": 0.8888888888888888,
+      "clopper_pearson_95": [
+        0.5175034850826628,
+        0.9971908632534008
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P3",
+      "condition": "schema_llm",
+      "passes": 6,
+      "n": 9,
+      "proportion": 0.6666666666666666,
+      "clopper_pearson_95": [
+        0.29929505620854047,
+        0.9251453685803082
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P3",
+      "condition": "deterministic_schema",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P3",
+      "condition": "lexical_source",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P3",
+      "condition": "identical_facts_flat",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P4",
+      "condition": "simple_llm",
+      "passes": 8,
+      "n": 9,
+      "proportion": 0.8888888888888888,
+      "clopper_pearson_95": [
+        0.5175034850826628,
+        0.9971908632534008
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P4",
+      "condition": "schema_llm",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P4",
+      "condition": "deterministic_schema",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P4",
+      "condition": "lexical_source",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    },
+    {
+      "task_id": "P4",
+      "condition": "identical_facts_flat",
+      "passes": 9,
+      "n": 9,
+      "proportion": 1.0,
+      "clopper_pearson_95": [
+        0.6637328831200568,
+        1.0
+      ],
+      "interval_label": "nominal binomial reference only; shared construction and correlated variants invalidate calibrated coverage; not a generalization interval"
+    }
+  ],
+  "E3_paired_condition_contrast": [
+    {
+      "left": "simple_llm",
+      "right": "schema_llm",
+      "left_greater": 3,
+      "equal": 8,
+      "right_greater": 1,
+      "cases_compared": 12
+    },
+    {
+      "left": "simple_llm",
+      "right": "deterministic_schema",
+      "left_greater": 0,
+      "equal": 8,
+      "right_greater": 4,
+      "cases_compared": 12
+    },
+    {
+      "left": "simple_llm",
+      "right": "lexical_source",
+      "left_greater": 0,
+      "equal": 8,
+      "right_greater": 4,
+      "cases_compared": 12
+    },
+    {
+      "left": "simple_llm",
+      "right": "identical_facts_flat",
+      "left_greater": 0,
+      "equal": 8,
+      "right_greater": 4,
+      "cases_compared": 12
+    },
+    {
+      "left": "schema_llm",
+      "right": "deterministic_schema",
+      "left_greater": 0,
+      "equal": 8,
+      "right_greater": 4,
+      "cases_compared": 12
+    },
+    {
+      "left": "schema_llm",
+      "right": "lexical_source",
+      "left_greater": 0,
+      "equal": 8,
+      "right_greater": 4,
+      "cases_compared": 12
+    },
+    {
+      "left": "schema_llm",
+      "right": "identical_facts_flat",
+      "left_greater": 0,
+      "equal": 8,
+      "right_greater": 4,
+      "cases_compared": 12
+    },
+    {
+      "left": "deterministic_schema",
+      "right": "lexical_source",
+      "left_greater": 0,
+      "equal": 12,
+      "right_greater": 0,
+      "cases_compared": 12
+    },
+    {
+      "left": "deterministic_schema",
+      "right": "identical_facts_flat",
+      "left_greater": 0,
+      "equal": 12,
+      "right_greater": 0,
+      "cases_compared": 12
+    },
+    {
+      "left": "lexical_source",
+      "right": "identical_facts_flat",
+      "left_greater": 0,
+      "equal": 12,
+      "right_greater": 0,
+      "cases_compared": 12
+    }
+  ],
+  "E4_condition_summary": [
+    {
+      "condition": "simple_llm",
+      "mean_task_proportion": 0.8333333333333333,
+      "min_task_proportion": 0.5555555555555556,
+      "max_task_proportion": 1.0,
+      "tasks": 4
+    },
+    {
+      "condition": "schema_llm",
+      "mean_task_proportion": 0.6944444444444444,
+      "min_task_proportion": 0.1111111111111111,
+      "max_task_proportion": 1.0,
+      "tasks": 4
+    },
+    {
+      "condition": "deterministic_schema",
+      "mean_task_proportion": 1.0,
+      "min_task_proportion": 1.0,
+      "max_task_proportion": 1.0,
+      "tasks": 4
+    },
+    {
+      "condition": "lexical_source",
+      "mean_task_proportion": 1.0,
+      "min_task_proportion": 1.0,
+      "max_task_proportion": 1.0,
+      "tasks": 4
+    },
+    {
+      "condition": "identical_facts_flat",
+      "mean_task_proportion": 1.0,
+      "min_task_proportion": 1.0,
+      "max_task_proportion": 1.0,
+      "tasks": 4
+    }
+  ],
+  "E5_identifier_robustness": [
+    {
+      "task_id": "P1",
+      "condition": "simple_llm",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P1",
+      "condition": "schema_llm",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P1",
+      "condition": "deterministic_schema",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P1",
+      "condition": "lexical_source",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P1",
+      "condition": "identical_facts_flat",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P2",
+      "condition": "simple_llm",
+      "canonical_minus_mean_opaque": 0.16666666666666663
+    },
+    {
+      "task_id": "P2",
+      "condition": "schema_llm",
+      "canonical_minus_mean_opaque": 0.3333333333333333
+    },
+    {
+      "task_id": "P2",
+      "condition": "deterministic_schema",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P2",
+      "condition": "lexical_source",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P2",
+      "condition": "identical_facts_flat",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P3",
+      "condition": "simple_llm",
+      "canonical_minus_mean_opaque": -0.33333333333333337
+    },
+    {
+      "task_id": "P3",
+      "condition": "schema_llm",
+      "canonical_minus_mean_opaque": -1.0
+    },
+    {
+      "task_id": "P3",
+      "condition": "deterministic_schema",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P3",
+      "condition": "lexical_source",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P3",
+      "condition": "identical_facts_flat",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P4",
+      "condition": "simple_llm",
+      "canonical_minus_mean_opaque": -0.33333333333333337
+    },
+    {
+      "task_id": "P4",
+      "condition": "schema_llm",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P4",
+      "condition": "deterministic_schema",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P4",
+      "condition": "lexical_source",
+      "canonical_minus_mean_opaque": 0.0
+    },
+    {
+      "task_id": "P4",
+      "condition": "identical_facts_flat",
+      "canonical_minus_mean_opaque": 0.0
+    }
+  ],
+  "E6_construction_variation": [
+    {
+      "method": "schema_llm",
+      "variant": "canonical",
+      "recall": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "realizations": 3
+      },
+      "precision": {
+        "mean": 0.9795918367346937,
+        "min": 0.9795918367346939,
+        "max": 0.9795918367346939,
+        "realizations": 3
+      }
+    },
+    {
+      "method": "simple_llm",
+      "variant": "canonical",
+      "recall": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "realizations": 3
+      },
+      "precision": {
+        "mean": 0.9795918367346937,
+        "min": 0.9795918367346939,
+        "max": 0.9795918367346939,
+        "realizations": 3
+      }
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v1",
+      "recall": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "realizations": 3
+      },
+      "precision": {
+        "mean": 0.9795918367346937,
+        "min": 0.9795918367346939,
+        "max": 0.9795918367346939,
+        "realizations": 3
+      }
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v1",
+      "recall": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "realizations": 3
+      },
+      "precision": {
+        "mean": 0.9795918367346937,
+        "min": 0.9795918367346939,
+        "max": 0.9795918367346939,
+        "realizations": 3
+      }
+    },
+    {
+      "method": "schema_llm",
+      "variant": "opaque_v2",
+      "recall": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "realizations": 3
+      },
+      "precision": {
+        "mean": 0.9795918367346937,
+        "min": 0.9795918367346939,
+        "max": 0.9795918367346939,
+        "realizations": 3
+      }
+    },
+    {
+      "method": "simple_llm",
+      "variant": "opaque_v2",
+      "recall": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "realizations": 3
+      },
+      "precision": {
+        "mean": 0.9795918367346937,
+        "min": 0.9795918367346939,
+        "max": 0.9795918367346939,
+        "realizations": 3
+      }
+    }
+  ],
+  "E7_failure_mechanism": {
+    "simple_llm": {
+      "first_failure_stage": {
+        "execution": 4,
+        "numerical_scoring": 1,
+        "sql_validation": 1
+      },
+      "attribution": {
+        "required_fact_present_but_not_retrieved": 6
+      },
+      "correct_but_not_graph_supported": 11,
+      "failed_before_analysis": 0,
+      "missing_not_dispatched": 0
+    },
+    "schema_llm": {
+      "first_failure_stage": {
+        "execution": 6,
+        "sql_validation": 3,
+        "numerical_scoring": 2
+      },
+      "attribution": {
+        "required_fact_present_but_not_retrieved": 11
+      },
+      "correct_but_not_graph_supported": 7,
+      "failed_before_analysis": 0,
+      "missing_not_dispatched": 0
+    },
+    "deterministic_schema": {
+      "first_failure_stage": {},
+      "attribution": {},
+      "correct_but_not_graph_supported": 0,
+      "failed_before_analysis": 0,
+      "missing_not_dispatched": 0
+    },
+    "lexical_source": {
+      "first_failure_stage": {},
+      "attribution": {},
+      "correct_but_not_graph_supported": 0,
+      "failed_before_analysis": 0,
+      "missing_not_dispatched": 0
+    },
+    "identical_facts_flat": {
+      "first_failure_stage": {},
+      "attribution": {},
+      "correct_but_not_graph_supported": 0,
+      "failed_before_analysis": 0,
+      "missing_not_dispatched": 0
+    }
+  },
+  "token_use_by_pipeline": {
+    "construction": {
+      "provider_calls": 234,
+      "input_tokens": 172989,
+      "output_tokens": 93424
+    },
+    "analysis": {
+      "provider_calls": 180,
+      "input_tokens": 489638,
+      "output_tokens": 109192
+    }
+  },
+  "not_computed_by_design": [
+    "trial-level independence intervals",
+    "significance tests across the 180 trials",
+    "a pooled construction-method ranking"
+  ]
+}
