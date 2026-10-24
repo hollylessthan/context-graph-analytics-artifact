@@ -15,12 +15,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Reproduce stage-local experiment from original records
-        run: |
-          if test -f evidence/stage-local-evidence.zip; then
-            python scripts/reproduce_stage.py evidence/stage-local-evidence.zip
-          else
-            echo 'Stage-local archive pending upload; skip until included'
-          fi
+        run: python scripts/reproduce_stage.py evidence/stage-local-evidence.zip
       - name: Check frozen summaries
         run: python scripts/check_export.py
       - name: Reproduce all paired outcomes and verify ZIP checksums

@@ -1,11 +1,19 @@
 # Context-Graph Analytics: Reproduction Artifact
 
-**Staged export, not yet a completed reproducibility release.** Companion to *Evaluating Context-Graph Construction for Analytical Agents: Hidden Confounders and Lessons from a Controlled Benchmark* by Fangyu Lo (Independent Researcher).
+**Validated evidence export, pending release review and archival.** Companion to *Evaluating Context-Graph Construction for Analytical Agents: Hidden Confounders and Lessons from a Controlled Benchmark* by Fangyu Lo (Independent Researcher).
 
 Original code and studies: https://github.com/hollylessthan/context-graph-analytics-study
 
 ## Offline summary validation
-Run `python scripts/check_export.py` with Python 3.11+. No API keys or paid calls needed. GitHub Actions also checks these summaries.
+Run the following commands with Python 3.11+. No API keys or paid calls needed:
+
+```bash
+python scripts/check_export.py
+python scripts/reproduce_stage.py evidence/stage-local-evidence.zip
+python scripts/reproduce_paired.py evidence/context-graph-paired-evidence-curated.zip
+```
+
+ GitHub Actions also checks these summaries.
 
 Current checks verify frozen original totals 30/36 versus 25/36, eight factorial combinations for both methods, 44 packing-selected evidence-set changes, and paired/external audit summary provenance. **They do not reproduce the original experiment from raw traces.**
 
@@ -21,4 +29,4 @@ Run `python scripts/reproduce_paired.py evidence/context-graph-paired-evidence-c
 
 ## Stage-local factorial evidence
 
-The four compressed originals (`catalogs.json.gz`, `factorial.json.gz`, `pairs.json.gz`, `support.json.gz`) have been independently SHA-256 checked against the frozen summary. The repository's `scripts/reproduce_stage.py` recomputes all 16 factorial cells, 44/72 packing-only changed contexts, and 48/218/171 changed selections by stage from record-level traces. Once `evidence/stage-local-evidence.zip` is committed, CI automatically runs this check. Until then, the script can be run locally with a ZIP containing `stage-local/<filename>.json.gz`.
+The four compressed originals (`catalogs.json.gz`, `factorial.json.gz`, `pairs.json.gz`, `support.json.gz`) have been independently SHA-256 checked against the frozen summary. The repository's `scripts/reproduce_stage.py` recomputes all 16 factorial cells, 44/72 packing-only changed contexts, and 48/218/171 changed selections by stage from record-level traces. The ZIP is now committed and its trace-level verification passed in [CI run 40136118512](https://github.com/hollylessthan/context-graph-analytics-artifact/actions/runs/40136118512).
