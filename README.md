@@ -1,6 +1,6 @@
 # Context-Graph Analytics: Reproduction Artifact
 
-**Frozen evidence artifact archived as [v1.0](https://github.com/hollylessthan/context-graph-analytics-artifact/releases/tag/artifact-v1.0), DOI [10.5281/zenodo.23628013](https://doi.org/10.5281/zenodo.23628013).** Companion to *Evaluating Context-Graph Construction for Analytical Agents: Hidden Confounders and Lessons from a Controlled Benchmark* by Fangyu Lo (Independent Researcher).
+**Frozen evidence artifact archived as [artifact-v1.0.1](https://github.com/hollylessthan/context-graph-analytics-artifact/releases/tag/artifact-v1.0.1), DOI [10.5281/zenodo.23628731](https://doi.org/10.5281/zenodo.23628731).** Companion to *Evaluating Context-Graph Construction for Analytical Agents: Hidden Confounders and Lessons from a Controlled Benchmark* by Fangyu Lo (Independent Researcher).
 
 Original code and studies (currently private; links require repository access): https://github.com/hollylessthan/context-graph-analytics-study
 
@@ -20,7 +20,7 @@ Current checks verify frozen original totals 30/36 versus 25/36, eight factorial
 
 The 264-call paired run was curated from [an expiring workflow artifact 12571928596](https://github.com/hollylessthan/context-graph-analytics-study/actions/runs/40120563599/artifacts/12571928596). The scored outputs, SQL, contexts, plans and provider event ledger are now included in `evidence/context-graph-paired-evidence-curated.zip`; opaque provider-response payloads are intentionally excluded.
 
-The frozen evidence was published as [artifact-v1.0](https://github.com/hollylessthan/context-graph-analytics-artifact/releases/tag/artifact-v1.0) and archived as [10.5281/zenodo.23628013](https://doi.org/10.5281/zenodo.23628013). This post-release documentation update is not part of the immutable v1.0 archive. See [EXPORT_SCOPE.md](EXPORT_SCOPE.md) for reproduction limits.
+The frozen evidence was first published as [artifact-v1.0](https://github.com/hollylessthan/context-graph-analytics-artifact/releases/tag/artifact-v1.0) (DOI [10.5281/zenodo.23628013](https://doi.org/10.5281/zenodo.23628013)) and updated with provenance/documentation corrections as [artifact-v1.0.1](https://github.com/hollylessthan/context-graph-analytics-artifact/releases/tag/artifact-v1.0.1) (DOI [10.5281/zenodo.23628731](https://doi.org/10.5281/zenodo.23628731)). The two versions retain the same experimental evidence. See [EXPORT_SCOPE.md](EXPORT_SCOPE.md) for reproduction limits.
 
 ## Raw paired evidence and reproduction
 
